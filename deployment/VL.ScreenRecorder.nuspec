@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.ScreenRecorder</id>
+    <version>0.0.1-alpha</version>
+    <title>VL.ScreenRecorder</title>
+    <authors>vvvv</authors>
+    <owners>vvvv</owners>
+    <projectUrl>http://vvvv.org</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>A simple screen recorder for VL</summary>
+    <description>A simple screen recorder for VL</description>
+    <tags>VL, movie, screen, mp4, video, record</tags>
+	<icon>icon\nugeticon.png</icon>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+	<file src="..\lib\*.dll" target="lib\" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+	<file src="nugeticon.png" target="icon\" />
+  </files>
+</package>
