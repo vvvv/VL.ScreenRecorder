@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="J9yO66TvmLJQO8lumx5F55" LanguageVersion="2020.2.2.281" Version="0.128">
-  <NugetDependency Id="UFnW8Z4qKIgQDCMyHYV5oj" Location="VL.CoreLib" Version="2020.2.2" />
+<Document xmlns:p="property" Id="J9yO66TvmLJQO8lumx5F55" LanguageVersion="2021.4.1.663" Version="0.128">
+  <NugetDependency Id="UFnW8Z4qKIgQDCMyHYV5oj" Location="VL.CoreLib" Version="2021.4.0-0602-g8ed5e0ce29" />
   <Patch Id="VdIoMQTpnkTOEDhYaNLXg4">
     <Canvas Id="TyuTHLwYfn3LiJY04j9rJv" DefaultCategory="System" CanvasType="FullCategory">
       <!--
@@ -348,11 +348,6 @@
               <ControlPoint Id="GBhE9sG84lwNYYjmnQnJKG" Bounds="-505,672" Alignment="Bottom" />
               <ControlPoint Id="QU7GcfaNeOUMlrGCH6uBtJ" Bounds="-505,246" Alignment="Top" />
               <Patch Id="PD9tjub4U73LFa0LntChaI" ManuallySortedPins="true">
-                <Patch Id="HWTqHiv9QShOZMo8Mnc6Ya" Name="Create" ManuallySortedPins="true" />
-                <Patch Id="J03ZQMICdvCPQW7KbKYw4n" Name="Then" ManuallySortedPins="true" />
-                <Patch Id="U8Pgb7T2VY8PrXU2F2WV1q" Name="Update">
-                  <Pin Id="HnlNQ3ZpnHPMtFHEitW4yg" MergeId="276077" Name="Status" Kind="OutputPin" Bounds="522,621" />
-                </Patch>
                 <Node Bounds="-570,547,119,26" Id="LDSseBcILJHOU7ANOxt4Ta">
                   <p:NodeReference LastCategoryFullName="ScreenRecorderLib.Recorder" LastSymbolSource="ScreenRecorderLib.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -483,6 +478,8 @@
                     </Node>
                   </Patch>
                 </Node>
+                <Patch Id="HWTqHiv9QShOZMo8Mnc6Ya" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="J03ZQMICdvCPQW7KbKYw4n" Name="Then" ManuallySortedPins="true" />
               </Patch>
             </Node>
             <ControlPoint Id="F6lZ5ymM89RMBC2OfNAJDG" Bounds="-503,705" />
@@ -499,15 +496,7 @@
               </p:NodeReference>
               <Patch Id="VLJEKL8gjkjO9h9waPe4yZ">
                 <Canvas Id="JcU0k7bpFZdONYqUARxCEs" CanvasType="Group">
-                  <Node Bounds="393,223,65,26" Id="EJv3s8R72VcOzCsVreasEx">
-                    <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="AssemblyCategory" Name="VideoOptions" />
-                      <Choice Kind="OperationCallFlag" Name="Create" />
-                    </p:NodeReference>
-                    <Pin Id="URz9Zg7V2fnPiEEQOXOtDG" Name="Output" Kind="StateOutputPin" />
-                  </Node>
-                  <Node Bounds="389,342,605,388" Id="CXtUFzO3tvuMuRm3BagTGq">
+                  <Node Bounds="124,335,605,422" Id="CXtUFzO3tvuMuRm3BagTGq">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -519,7 +508,7 @@
                     <Patch Id="TjoBPTpJEY6PFrugnbWcLU" ManuallySortedPins="true">
                       <Patch Id="F8HzQ66CXVBNYk0O5dHzMB" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="IaGVhz5pWeGN0k3f7ohBw8" Name="Then" ManuallySortedPins="true" />
-                      <Node Bounds="401,471,65,26" Id="D7vUqXDDL3NLNSGRD90NAA">
+                      <Node Bounds="136,505,65,26" Id="D7vUqXDDL3NLNSGRD90NAA">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="VideoOptions" />
@@ -529,7 +518,7 @@
                         <Pin Id="D8F3hfR1xZmLDhK2npvT5B" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="BXCRBbKg5N7LVgEWzIzEM0" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="401,367,84,26" Id="LcfoLRYRe6qMqcPv6NzY03">
+                      <Node Bounds="136,407,84,26" Id="LcfoLRYRe6qMqcPv6NzY03">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="SetBitrateMode" />
@@ -538,7 +527,7 @@
                         <Pin Id="OTjOxiA7uzLOwogjSRZ470" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="OQQD3hilMYvNd8OiXITCLg" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="402,518,95,26" Id="KAtlKH5wqrCQTwJPJC5tO9">
+                      <Node Bounds="136,554,95,26" Id="KAtlKH5wqrCQTwJPJC5tO9">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="VideoOptions" />
@@ -548,7 +537,7 @@
                         <Pin Id="Hz5XMCFjV3uPeZsJ8c56ZZ" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="LYrLna24HGdMepNCGjfZuf" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="403,617,76,26" Id="CC09gecWpcKPvPIW7hTqxr">
+                      <Node Bounds="136,652,76,26" Id="CC09gecWpcKPvPIW7hTqxr">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="VideoOptions" />
@@ -558,7 +547,7 @@
                         <Pin Id="AdvYkZ1TzYYOW9VZeYusQ5" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="J2Zc1eBTnjzQNxvmQvr4hT" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="402,565,108,26" Id="StNXh6FqtU7OpZuVkOFbsJ">
+                      <Node Bounds="136,603,108,26" Id="StNXh6FqtU7OpZuVkOFbsJ">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="VideoOptions" />
@@ -568,7 +557,7 @@
                         <Pin Id="ODF9uUePVMnMQx8CHcaOUo" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="EQcr9cnHTGJNKMIe3XkGib" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="401,418,65,26" Id="UChP9ZWYeOrQLKQCSvp6e9">
+                      <Node Bounds="136,456,65,26" Id="UChP9ZWYeOrQLKQCSvp6e9">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="VideoOptions" />
@@ -578,7 +567,7 @@
                         <Pin Id="DfadtfmO4CbQCmzaJ5sYV1" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="Kz72H88PrIqMPOn0WSI5Mb" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="402,674,104,26" Id="NfNCtN0yz2aLN7aF4wueip">
+                      <Node Bounds="136,701,104,26" Id="NfNCtN0yz2aLN7aF4wueip">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="SetSnapshotFormat" />
@@ -587,62 +576,37 @@
                         <Pin Id="EbwpC76yepvP74iSlh62QN" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="SKzR2rGLTV3O9jzeNVQFED" Name="Output" Kind="StateOutputPin" />
                       </Node>
+                      <Node Bounds="136,358,65,26" Id="EJv3s8R72VcOzCsVreasEx">
+                        <p:NodeReference LastCategoryFullName="ScreenRecorderLib.VideoOptions" LastSymbolSource="ScreenRecorderLib.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="AssemblyCategory" Name="VideoOptions" />
+                          <Choice Kind="OperationCallFlag" Name="Create" />
+                        </p:NodeReference>
+                        <Pin Id="URz9Zg7V2fnPiEEQOXOtDG" Name="Output" Kind="StateOutputPin" />
+                      </Node>
                     </Patch>
-                    <ControlPoint Id="BkvFpwYQqsxM9kc7o7erDz" Bounds="622,348" Alignment="Top" />
-                    <ControlPoint Id="T1IvAcICx6PN0d5vFJatyf" Bounds="404,724" Alignment="Bottom" />
-                    <ControlPoint Id="DHj6BcoqD23PZmMDGM6ZeL" Bounds="481,348" Alignment="Top" />
-                    <ControlPoint Id="LWHkSFCHH7YPw6Wo7H2Wsc" Bounds="685,348" Alignment="Top" />
-                    <ControlPoint Id="HsWZkTHtmKeLMClmptdh5y" Bounds="905,348" Alignment="Top" />
-                    <ControlPoint Id="UFaG76WiCepQOOOBkD0Pa8" Bounds="795,348" Alignment="Top" />
-                    <ControlPoint Id="BCoNHBseN2VNywHPjpJn0e" Bounds="566,348" Alignment="Top" />
-                    <ControlPoint Id="SKJa61rLT9AOCjigjtMIFf" Bounds="979,348" Alignment="Top" />
+                    <ControlPoint Id="BkvFpwYQqsxM9kc7o7erDz" Bounds="357,376" Alignment="Top" />
+                    <ControlPoint Id="T1IvAcICx6PN0d5vFJatyf" Bounds="139,752" Alignment="Bottom" />
+                    <ControlPoint Id="DHj6BcoqD23PZmMDGM6ZeL" Bounds="216,376" Alignment="Top" />
+                    <ControlPoint Id="LWHkSFCHH7YPw6Wo7H2Wsc" Bounds="420,376" Alignment="Top" />
+                    <ControlPoint Id="HsWZkTHtmKeLMClmptdh5y" Bounds="640,376" Alignment="Top" />
+                    <ControlPoint Id="UFaG76WiCepQOOOBkD0Pa8" Bounds="530,376" Alignment="Top" />
+                    <ControlPoint Id="BCoNHBseN2VNywHPjpJn0e" Bounds="301,376" Alignment="Top" />
+                    <ControlPoint Id="SKJa61rLT9AOCjigjtMIFf" Bounds="714,376" Alignment="Top" />
                   </Node>
-                  <Pad Id="OVE2CpmUEdUPijewzPmWuM" Bounds="398,284" />
-                  <ControlPoint Id="GnICyH5N3rzPQn0s52H5c4" Bounds="404,752" />
-                  <ControlPoint Id="Frwmeifz94vLOruuoAPqE0" Bounds="624,299" />
-                  <ControlPoint Id="CVvrpLBqffxQGZ9bFMx92t" Bounds="482,299" />
-                  <ControlPoint Id="PePpv34SGUMMblHfScrjI8" Bounds="685,299" />
-                  <ControlPoint Id="SA8oRGLCkbTQGCKhkXebYP" Bounds="903,299" />
-                  <ControlPoint Id="NDEY2UVtMdkPYzK7epQEj2" Bounds="798,299" />
-                  <ControlPoint Id="K79vOrYquf4PENsUIng1Iy" Bounds="566,299" />
-                  <ControlPoint Id="LFHkvkEn2ZfOBmaan6jmz1" Bounds="976,299" />
+                  <ControlPoint Id="GnICyH5N3rzPQn0s52H5c4" Bounds="139,780" />
+                  <ControlPoint Id="Frwmeifz94vLOruuoAPqE0" Bounds="359,297" />
+                  <ControlPoint Id="CVvrpLBqffxQGZ9bFMx92t" Bounds="217,297" />
+                  <ControlPoint Id="PePpv34SGUMMblHfScrjI8" Bounds="420,297" />
+                  <ControlPoint Id="SA8oRGLCkbTQGCKhkXebYP" Bounds="638,297" />
+                  <ControlPoint Id="NDEY2UVtMdkPYzK7epQEj2" Bounds="533,297" />
+                  <ControlPoint Id="K79vOrYquf4PENsUIng1Iy" Bounds="301,297" />
+                  <ControlPoint Id="LFHkvkEn2ZfOBmaan6jmz1" Bounds="711,297" />
                 </Canvas>
-                <Patch Id="A7IG6l2mGp2Mgrwbx0LEX7" Name="Create" ParticipatingElements="EJv3s8R72VcOzCsVreasEx" />
-                <Patch Id="Dd7sGQpncQhMCmHlRuKEUN" Name="Update">
-                  <Pin Id="LEWS6heNRNFLOPFRTkhEYT" Name="Output" Kind="OutputPin" Bounds="404,752" />
-                  <Pin Id="ASczCVywDZnPG6QNbiSMXx" Name="Bitrate" Kind="InputPin" Bounds="485,271" />
-                  <Pin Id="AwL6LMu6ievOCXEEGAZAhD" Name="Bitrate Mode" Kind="InputPin" DefaultValue="Quality">
-                    <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
-                      <Choice Kind="TypeFlag" Name="BitrateControlMode" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="OK7rzuUTU9MM1tqNefwTc4" Name="Encoder Profile" Kind="InputPin" Bounds="607,291" DefaultValue="Baseline">
-                    <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
-                      <Choice Kind="TypeFlag" Name="H264Profile" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="HhiKq8dFzP4PcF0BKNUPae" Name="Framerate" Kind="InputPin" Bounds="643,308" DefaultValue="30">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Integer32" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="JsOnnz5FmWbPxSoF05y0sv" Name="Is Fixed Framerate" Kind="InputPin" Bounds="723,298" DefaultValue="False">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Boolean" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="PtBSB8QgIKBMmvX4YGTJp0" Name="Quality" Kind="InputPin" Bounds="845,297" DefaultValue="70">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Integer32" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="Per4lPEqiF6MdqDZqw1bDI" Name="Slideshow Format" Kind="InputPin" Bounds="908,302" />
-                </Patch>
                 <ProcessDefinition Id="DGcTnZ7hIFqMg3INXsIgvq">
                   <Fragment Id="MxuIautl0VAMJgdmcig3GM" Patch="A7IG6l2mGp2Mgrwbx0LEX7" Enabled="true" />
                   <Fragment Id="SptVRjSMXkRP06IB7nwLor" Patch="Dd7sGQpncQhMCmHlRuKEUN" Enabled="true" />
                 </ProcessDefinition>
-                <Link Id="Bw2rPfl9L3EMitQMqzh0qv" Ids="URz9Zg7V2fnPiEEQOXOtDG,OVE2CpmUEdUPijewzPmWuM" />
                 <Link Id="QE0KDpgYvC0Mtg2Jv7hKv5" Ids="BkvFpwYQqsxM9kc7o7erDz,D8F3hfR1xZmLDhK2npvT5B" />
                 <Link Id="Gin8n3Ewjx6PcsT4r6DKgC" Ids="SKzR2rGLTV3O9jzeNVQFED,T1IvAcICx6PN0d5vFJatyf" />
                 <Link Id="DyFj4bBvT68NEVfaS8mvcw" Ids="T1IvAcICx6PN0d5vFJatyf,GnICyH5N3rzPQn0s52H5c4" />
@@ -667,13 +631,44 @@
                 <Link Id="A7pXP4D0yG0O1XJGQSjh2X" Ids="SKJa61rLT9AOCjigjtMIFf,EbwpC76yepvP74iSlh62QN" />
                 <Link Id="MujX81IfhSFNEjTfqImFIr" Ids="LFHkvkEn2ZfOBmaan6jmz1,SKJa61rLT9AOCjigjtMIFf" />
                 <Link Id="Rc7m7dVItmoMMTOBbDnkAc" Ids="Per4lPEqiF6MdqDZqw1bDI,LFHkvkEn2ZfOBmaan6jmz1" IsHidden="true" />
-                <Link Id="ALEgUaPyiTJMhOMWgSIByX" Ids="OVE2CpmUEdUPijewzPmWuM,Dmt7yssz2kSLRkTmIfMyk1" />
                 <Link Id="AcRBEeDDr0wMk7R3nmxlfo" Ids="BXCRBbKg5N7LVgEWzIzEM0,O7zGsbw2mHILK49Rf7FDVX" />
                 <Link Id="CpjX9IBf9a3MW49SJTC3Q1" Ids="OQQD3hilMYvNd8OiXITCLg,LjmGMOhDzykOaMCTE6Egpu" />
                 <Link Id="TBonr4QNENzPtvaB9gPP5S" Ids="Kz72H88PrIqMPOn0WSI5Mb,NE8tagRZPTrOuSFqqMr1zI" />
                 <Link Id="Idv1AGoTmQjP2L3QkSe9OU" Ids="LYrLna24HGdMepNCGjfZuf,ImQbjnExTo6O9ol5GSvYBs" />
                 <Link Id="NeOD2GINrd5QErXKsBvIQZ" Ids="EQcr9cnHTGJNKMIe3XkGib,OUzF7T9Z9m8QInYYpiWXhT" />
                 <Link Id="D6S4lRa2l4SNlHLAVQVV2E" Ids="J2Zc1eBTnjzQNxvmQvr4hT,MPblzY7VqmmLxTIap7IRvQ" />
+                <Patch Id="A7IG6l2mGp2Mgrwbx0LEX7" Name="Create" />
+                <Patch Id="Dd7sGQpncQhMCmHlRuKEUN" Name="Update">
+                  <Pin Id="AwL6LMu6ievOCXEEGAZAhD" Name="Bitrate Mode" Kind="InputPin" DefaultValue="Quality">
+                    <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
+                      <Choice Kind="TypeFlag" Name="BitrateControlMode" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="PtBSB8QgIKBMmvX4YGTJp0" Name="Quality" Kind="InputPin" Bounds="845,297" DefaultValue="70">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="ASczCVywDZnPG6QNbiSMXx" Name="Bitrate" Kind="InputPin" Bounds="485,271" />
+                  <Pin Id="OK7rzuUTU9MM1tqNefwTc4" Name="Encoder Profile" Kind="InputPin" Bounds="607,291" DefaultValue="Baseline">
+                    <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
+                      <Choice Kind="TypeFlag" Name="H264Profile" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="JsOnnz5FmWbPxSoF05y0sv" Name="Is Fixed Framerate" Kind="InputPin" Bounds="723,298" DefaultValue="False">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="HhiKq8dFzP4PcF0BKNUPae" Name="Framerate" Kind="InputPin" Bounds="643,308" DefaultValue="30">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="Per4lPEqiF6MdqDZqw1bDI" Name="Slideshow Format" Kind="InputPin" Bounds="908,302" />
+                  <Pin Id="LEWS6heNRNFLOPFRTkhEYT" Name="Output" Kind="OutputPin" Bounds="404,752" />
+                </Patch>
+                <Link Id="Sy3txpzem9RMsEOCz9iicA" Ids="URz9Zg7V2fnPiEEQOXOtDG,Dmt7yssz2kSLRkTmIfMyk1" />
               </Patch>
             </Node>
             <!--
@@ -687,15 +682,7 @@
               </p:NodeReference>
               <Patch Id="HRIlMQLhnfAM5UgV8BdsBs">
                 <Canvas Id="UbKkIq3NsgIP4stKjFiqHh" CanvasType="Group">
-                  <Node Bounds="396,241,65,26" Id="SjUxheCJ2CUOQg77UCFCHz">
-                    <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="Create" />
-                      <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" NeedsToBeDirectParent="true" />
-                    </p:NodeReference>
-                    <Pin Id="Uz9i10I7uhjNRu5hpM6SQw" Name="Output" Kind="StateOutputPin" />
-                  </Node>
-                  <Node Bounds="384,338,667,395" Id="TbLnKZErFKEMutrjzWCcJO">
+                  <Node Bounds="94,226,667,418" Id="TbLnKZErFKEMutrjzWCcJO">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -704,18 +691,18 @@
                     <Pin Id="QKOQYL0lECDM4PlPIluPi3" Name="Force" Kind="InputPin" />
                     <Pin Id="JtniEidIrmdOGfwl6s28l5" Name="Dispose Cached Outputs" Kind="InputPin" />
                     <Pin Id="RxWwr5BH1tRPuNusxzBL7W" Name="Has Changed" Kind="OutputPin" />
-                    <ControlPoint Id="Jo0XdgMgrliMU0S9lcxwi4" Bounds="458,344" Alignment="Top" />
-                    <ControlPoint Id="U3MPQEWjomxL4K2dw8nQkX" Bounds="398,727" Alignment="Bottom" />
-                    <ControlPoint Id="FtKyEKQfGFsOky1vW100Sc" Bounds="704,344" Alignment="Top" />
-                    <ControlPoint Id="CWcb1zQMUD8LmyIwcxAvOS" Bounds="515,344" Alignment="Top" />
-                    <ControlPoint Id="RpunnLKkzEcOQf0AnM8aqa" Bounds="587,344" Alignment="Top" />
-                    <ControlPoint Id="Etu8nQI3QOZO8hEtEFUDFl" Bounds="1036,344" Alignment="Top" />
-                    <ControlPoint Id="Vxmne5Y9fFXM7MmNuWR4XY" Bounds="939,344" Alignment="Top" />
-                    <ControlPoint Id="UHf4jH2RgUxNoOj4Z41XgX" Bounds="794,344" Alignment="Top" />
+                    <ControlPoint Id="Jo0XdgMgrliMU0S9lcxwi4" Bounds="168,253" Alignment="Top" />
+                    <ControlPoint Id="U3MPQEWjomxL4K2dw8nQkX" Bounds="108,637" Alignment="Bottom" />
+                    <ControlPoint Id="FtKyEKQfGFsOky1vW100Sc" Bounds="414,253" Alignment="Top" />
+                    <ControlPoint Id="CWcb1zQMUD8LmyIwcxAvOS" Bounds="225,253" Alignment="Top" />
+                    <ControlPoint Id="RpunnLKkzEcOQf0AnM8aqa" Bounds="297,253" Alignment="Top" />
+                    <ControlPoint Id="Etu8nQI3QOZO8hEtEFUDFl" Bounds="746,253" Alignment="Top" />
+                    <ControlPoint Id="Vxmne5Y9fFXM7MmNuWR4XY" Bounds="649,253" Alignment="Top" />
+                    <ControlPoint Id="UHf4jH2RgUxNoOj4Z41XgX" Bounds="504,253" Alignment="Top" />
                     <Patch Id="NMyobpd6ppaQdl4DTn9j4p" ManuallySortedPins="true">
                       <Patch Id="NPKY0FXoGTJLRJns5VlyGB" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="TMs5BmzcqaBPWUKpTqzczT" Name="Then" ManuallySortedPins="true" />
-                      <Node Bounds="396,366,65,26" Id="R8xQdaXQDiSLnbQRW6bqOy">
+                      <Node Bounds="106,298,65,26" Id="R8xQdaXQDiSLnbQRW6bqOy">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" />
@@ -725,7 +712,7 @@
                         <Pin Id="HqpW50aC7AIOhSJw16AQJA" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="NlXQcvvzCgDLZn2gUfWjE9" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="396,506,110,26" Id="TJ5bLcEI0HGPTIiRLnVmYk">
+                      <Node Bounds="106,445,110,26" Id="TJ5bLcEI0HGPTIiRLnVmYk">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" />
@@ -735,7 +722,7 @@
                         <Pin Id="OeEKjrfF2NjNadaB7fxHcP" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="J8jvC0W9EuVOYSX7lWBi4s" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="396,409,95,26" Id="O0OqIrefBoNMHNBcI29y7y">
+                      <Node Bounds="106,347,95,26" Id="O0OqIrefBoNMHNBcI29y7y">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" />
@@ -745,7 +732,7 @@
                         <Pin Id="LmZt04bsbQoL02yRpfwzqf" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="AamNskKB15IQdWeMraFxxs" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="396,458,127,26" Id="IX7Xw4Nh8ZDPwjwO7SEvcL">
+                      <Node Bounds="106,396,127,26" Id="IX7Xw4Nh8ZDPwjwO7SEvcL">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" />
@@ -755,7 +742,7 @@
                         <Pin Id="Rvr1PNxfhAHLJxgVC3wG2W" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="I4rGO8Rqe12PtzwOcEJTAP" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="396,677,108,26" Id="In5qkamsxb5N0DeC4L6b9P">
+                      <Node Bounds="106,592,108,26" Id="In5qkamsxb5N0DeC4L6b9P">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" />
@@ -765,7 +752,7 @@
                         <Pin Id="VzqqL3q1JJYO1fzXpLhd09" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="PGDGIWD78HULYel8S5fggh" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="396,629,118,26" Id="Vo0c74NAtc4Nz35YjZbgkI">
+                      <Node Bounds="106,543,118,26" Id="Vo0c74NAtc4Nz35YjZbgkI">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" />
@@ -775,7 +762,7 @@
                         <Pin Id="UtjcvT8DX9eNEiumXG2nmS" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="ERG5DrVtGu9MC6CD8bSrXZ" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="396,573,135,26" Id="TvlF8mcAjqWPv66ZSIcoK9">
+                      <Node Bounds="106,494,135,26" Id="TvlF8mcAjqWPv66ZSIcoK9">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" />
@@ -785,20 +772,27 @@
                         <Pin Id="BqATnkGWv2MNisUgKxPbg4" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="CmWgchbUufcPOX4OVR1IYw" Name="Output" Kind="StateOutputPin" />
                       </Node>
+                      <Node Bounds="106,249,65,26" Id="SjUxheCJ2CUOQg77UCFCHz">
+                        <p:NodeReference LastCategoryFullName="ScreenRecorderLib.AudioOptions" LastSymbolSource="ScreenRecorderLib.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="Create" />
+                          <CategoryReference Kind="AssemblyCategory" Name="AudioOptions" NeedsToBeDirectParent="true" />
+                        </p:NodeReference>
+                        <Pin Id="Uz9i10I7uhjNRu5hpM6SQw" Name="Output" Kind="StateOutputPin" />
+                      </Node>
                     </Patch>
                   </Node>
-                  <Pad Id="IHwWZqRduvKLyO35RcBA3T" Bounds="398,307" />
-                  <ControlPoint Id="GSVG6220bqrMcKReMNIvBf" Bounds="398,755" />
-                  <ControlPoint Id="CVZ4KsCsVE4OFml0GXfLTu" Bounds="587,305" />
-                  <ControlPoint Id="BFNxI4sJY5lOtTSe5yWuTZ" Bounds="703,303" />
-                  <ControlPoint Id="S52iQDVhTZMNfrk30wLhUn" Bounds="457,308" />
-                  <ControlPoint Id="N7YL8fAs4EzOJfUiNG7OBI" Bounds="514,307" />
-                  <ControlPoint Id="JAQO2Qhgfh7PsMPXv4Bqvf" Bounds="794,304" />
-                  <ControlPoint Id="KGbqPx5En8ZPJjgwKik1LF" Bounds="938,300" />
-                  <ControlPoint Id="RZVZteICsEpN4J2IoyYxaI" Bounds="1039,302" />
-                  <ControlPoint Id="K0JnalbmMdrMo78tmftQMj" Bounds="634,1020" />
-                  <ControlPoint Id="U3ZLGSWEUQRQCx6rwfwYTL" Bounds="806,1020" />
-                  <Node Bounds="620,904,321,86" Id="F6wwTItThskMFXiCYloVoB">
+                  <ControlPoint Id="GSVG6220bqrMcKReMNIvBf" Bounds="108,664" />
+                  <ControlPoint Id="CVZ4KsCsVE4OFml0GXfLTu" Bounds="297,179" />
+                  <ControlPoint Id="BFNxI4sJY5lOtTSe5yWuTZ" Bounds="413,179" />
+                  <ControlPoint Id="S52iQDVhTZMNfrk30wLhUn" Bounds="167,179" />
+                  <ControlPoint Id="N7YL8fAs4EzOJfUiNG7OBI" Bounds="224,179" />
+                  <ControlPoint Id="JAQO2Qhgfh7PsMPXv4Bqvf" Bounds="504,179" />
+                  <ControlPoint Id="KGbqPx5En8ZPJjgwKik1LF" Bounds="648,179" />
+                  <ControlPoint Id="RZVZteICsEpN4J2IoyYxaI" Bounds="749,179" />
+                  <ControlPoint Id="K0JnalbmMdrMo78tmftQMj" Bounds="344,929" />
+                  <ControlPoint Id="U3ZLGSWEUQRQCx6rwfwYTL" Bounds="516,929" />
+                  <Node Bounds="330,813,321,86" Id="F6wwTItThskMFXiCYloVoB">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -807,22 +801,20 @@
                     <Pin Id="HruCkhDT69mL1mDJY8uypL" Name="Force" Kind="InputPin" />
                     <Pin Id="KA0Oc1SDmFLMagPaMQNyaQ" Name="Dispose Cached Outputs" Kind="InputPin" />
                     <Pin Id="LayOukxxP76MK2dz7g522F" Name="Has Changed" Kind="OutputPin" />
+                    <ControlPoint Id="Bvxs3eomIwzLp4cLRNHeUB" Bounds="344,893" Alignment="Bottom" />
+                    <ControlPoint Id="OnhwrEBMhDhLk126rtUtQ5" Bounds="515,893" Alignment="Bottom" />
                     <Patch Id="Ea7yVOS6AOZNdTFz7AfkDh" ManuallySortedPins="true">
                       <Patch Id="KkHMJa6f8HFNrKJcdRWHdY" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="AKDmEzn986jMVgIyXz1fcq" Name="Then" ManuallySortedPins="true" />
-                      <Node Bounds="804,935,125,19" Id="HHx3Q8seQd3PtjK4HzafWq">
+                      <Node Bounds="514,844,125,19" Id="HHx3Q8seQd3PtjK4HzafWq">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.Recorder" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="GetSystemAudioDevices" />
                         </p:NodeReference>
-                        <Pin Id="FoQxHdhPyJZOQJBrGT2cxV" Name="Source" Kind="InputPin">
-                          <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
-                            <Choice Kind="TypeFlag" Name="AudioDeviceSource" />
-                          </p:TypeAnnotation>
-                        </Pin>
+                        <Pin Id="FoQxHdhPyJZOQJBrGT2cxV" Name="Source" Kind="InputPin" />
                         <Pin Id="Q4GaO40XLtqM6wL0YwFTR2" Name="Result" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="632,940,125,19" Id="BksnJkoUPQEPuUSO4ziXIe">
+                      <Node Bounds="342,849,125,19" Id="BksnJkoUPQEPuUSO4ziXIe">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.Recorder" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="GetSystemAudioDevices" />
@@ -835,10 +827,8 @@
                         <Pin Id="PRAoEvjmtGDMkBfp1WDF1G" Name="Result" Kind="OutputPin" />
                       </Node>
                     </Patch>
-                    <ControlPoint Id="Bvxs3eomIwzLp4cLRNHeUB" Bounds="634,984" Alignment="Bottom" />
-                    <ControlPoint Id="OnhwrEBMhDhLk126rtUtQ5" Bounds="805,984" Alignment="Bottom" />
                   </Node>
-                  <Node Bounds="619,859,54,19" Id="SB0w1rvP3poOfGTwjK7kbZ">
+                  <Node Bounds="329,768,54,19" Id="SB0w1rvP3poOfGTwjK7kbZ">
                     <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="OnOpen" />
@@ -847,44 +837,10 @@
                     <Pin Id="SHQrj2vlZO3L8cbCoGxn4k" Name="Output" Kind="OutputPin" />
                   </Node>
                 </Canvas>
-                <Patch Id="GUrtiasntePLvoQlUVTRqk" Name="Create" ParticipatingElements="SjUxheCJ2CUOQg77UCFCHz" />
-                <Patch Id="JDd50czkuGRMwGvRg5WShb" Name="Update">
-                  <Pin Id="JbHiezuv4orOu8M4KEsdkd" Name="Output" Kind="OutputPin" Bounds="404,752" />
-                  <Pin Id="HbaHELXnGP5LDYYr03Lalc" Name="Input Device Enabled" Kind="InputPin" Bounds="527,287" DefaultValue="False">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Boolean" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="E7WuBlYIjPyLudvVfkGzsu" Name="Input Device" Kind="InputPin" Bounds="545,310" />
-                  <Pin Id="JTGxgLo9jY4Lbwkdf2N192" Name="Bitrate" Kind="InputPin" Bounds="486,259" DefaultValue="bitrate_128kbps">
-                    <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
-                      <Choice Kind="TypeFlag" Name="AudioBitrate" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="RkkJRs68QpXNITnHDIe1sH" Name="Channels" Kind="InputPin" Bounds="547,255" DefaultValue="Stereo">
-                    <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
-                      <Choice Kind="TypeFlag" Name="AudioChannels" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="MvUn5THF3LhPFh57K4bZrA" Name="Output Device Enabled" Kind="InputPin" Bounds="795,297" DefaultValue="True">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Boolean" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="VZKpCuZbC60QAAVrKEykfL" Name="Output Device" Kind="InputPin" Bounds="938,300" />
-                  <Pin Id="UbT0HA7QCNtOgLmOcqPN0S" Name="Record Audio" Kind="InputPin" Bounds="1039,302" DefaultValue="True">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Boolean" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="TlyXvHSJAxrPVCnPZhVQfu" Name="Available Input Devices" Kind="OutputPin" Bounds="698,835" />
-                  <Pin Id="HSWoUFuP5jbN3X5aZ1ePML" MergeId="614664" Name="Available Output Devices" Kind="OutputPin" Bounds="698,835" />
-                </Patch>
                 <ProcessDefinition Id="AwMhRBVsTvLNUietudaIH6">
                   <Fragment Id="O5BGuLtiOE5LgWcnPNur0r" Patch="GUrtiasntePLvoQlUVTRqk" Enabled="true" />
                   <Fragment Id="Gzg17FR5fHuPyeDYsHJnIY" Patch="JDd50czkuGRMwGvRg5WShb" Enabled="true" />
                 </ProcessDefinition>
-                <Link Id="GKE304OvCWEPsYiTaNIdOz" Ids="Uz9i10I7uhjNRu5hpM6SQw,IHwWZqRduvKLyO35RcBA3T" />
                 <Link Id="R4xSSvBFr6CPqqajHGsf4G" Ids="Jo0XdgMgrliMU0S9lcxwi4,HqpW50aC7AIOhSJw16AQJA" />
                 <Link Id="MzXEDMHan45O8ORsTEbODJ" Ids="U3MPQEWjomxL4K2dw8nQkX,GSVG6220bqrMcKReMNIvBf" />
                 <Link Id="HXC4iPV6DVDO0BmjsEg0fL" Ids="GSVG6220bqrMcKReMNIvBf,JbHiezuv4orOu8M4KEsdkd" IsHidden="true" />
@@ -900,7 +856,6 @@
                 <Link Id="UWytolRUP81MuqAAMBZOUd" Ids="HbaHELXnGP5LDYYr03Lalc,CVZ4KsCsVE4OFml0GXfLTu" IsHidden="true" />
                 <Link Id="KAO8t9mW3VEMhwjDDerqIQ" Ids="BFNxI4sJY5lOtTSe5yWuTZ,FtKyEKQfGFsOky1vW100Sc" />
                 <Link Id="HnzB9VB6tyTO3KWM2U03rm" Ids="E7WuBlYIjPyLudvVfkGzsu,BFNxI4sJY5lOtTSe5yWuTZ" IsHidden="true" />
-                <Link Id="PS4jzPYj98ALzKUmIrt5ZW" Ids="IHwWZqRduvKLyO35RcBA3T,N0etQOkvhJJOE9UqwTh4xF" />
                 <Link Id="A8YPiWrxbWaPlHVBOsZDsA" Ids="AamNskKB15IQdWeMraFxxs,OP5zC8tMQ2GNPbU2eNZLh9" />
                 <Link Id="Usxc6TbQEo5PYdrTmvZam1" Ids="S52iQDVhTZMNfrk30wLhUn,Jo0XdgMgrliMU0S9lcxwi4" />
                 <Link Id="KiDp4DfxEPOOGAMms6BSIM" Ids="JTGxgLo9jY4Lbwkdf2N192,S52iQDVhTZMNfrk30wLhUn" IsHidden="true" />
@@ -923,6 +878,40 @@
                 <Link Id="BrFvFffSOoiQEq3foOHnpv" Ids="Q4GaO40XLtqM6wL0YwFTR2,OnhwrEBMhDhLk126rtUtQ5" />
                 <Link Id="GEJfX2WyoeSN43c7dX58mX" Ids="OnhwrEBMhDhLk126rtUtQ5,U3ZLGSWEUQRQCx6rwfwYTL" />
                 <Link Id="LsELq4uWlStQPqVLgQEThl" Ids="SHQrj2vlZO3L8cbCoGxn4k,HruCkhDT69mL1mDJY8uypL" />
+                <Patch Id="GUrtiasntePLvoQlUVTRqk" Name="Create" />
+                <Patch Id="JDd50czkuGRMwGvRg5WShb" Name="Update">
+                  <Pin Id="JTGxgLo9jY4Lbwkdf2N192" Name="Bitrate" Kind="InputPin" Bounds="486,259" DefaultValue="bitrate_128kbps">
+                    <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
+                      <Choice Kind="TypeFlag" Name="AudioBitrate" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="RkkJRs68QpXNITnHDIe1sH" Name="Channels" Kind="InputPin" Bounds="547,255" DefaultValue="Stereo">
+                    <p:TypeAnnotation LastCategoryFullName="ScreenRecorderLib" LastSymbolSource="ScreenRecorderLib.dll">
+                      <Choice Kind="TypeFlag" Name="AudioChannels" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="HbaHELXnGP5LDYYr03Lalc" Name="Input Device Enabled" Kind="InputPin" Bounds="527,287" DefaultValue="False">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="E7WuBlYIjPyLudvVfkGzsu" Name="Input Device" Kind="InputPin" Bounds="545,310" />
+                  <Pin Id="MvUn5THF3LhPFh57K4bZrA" Name="Output Device Enabled" Kind="InputPin" Bounds="795,297" DefaultValue="True">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="VZKpCuZbC60QAAVrKEykfL" Name="Output Device" Kind="InputPin" Bounds="938,300" />
+                  <Pin Id="UbT0HA7QCNtOgLmOcqPN0S" Name="Record Audio" Kind="InputPin" Bounds="1039,302" DefaultValue="True">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="JbHiezuv4orOu8M4KEsdkd" Name="Output" Kind="OutputPin" Bounds="404,752" />
+                  <Pin Id="TlyXvHSJAxrPVCnPZhVQfu" Name="Available Input Devices" Kind="OutputPin" Bounds="698,835" />
+                  <Pin Id="HSWoUFuP5jbN3X5aZ1ePML" MergeId="614664" Name="Available Output Devices" Kind="OutputPin" Bounds="698,835" />
+                </Patch>
+                <Link Id="FDOcE81tRfTMUGu0FnaXp7" Ids="Uz9i10I7uhjNRu5hpM6SQw,N0etQOkvhJJOE9UqwTh4xF" />
               </Patch>
             </Node>
             <ControlPoint Id="HfdZPdID27dPlSB1orlAzi" Bounds="989,4" />
@@ -937,15 +926,7 @@
               </p:NodeReference>
               <Patch Id="ONXyXdpXRdDOhjmFqcNlSM">
                 <Canvas Id="OK7cYJgcpbSLjXOHAeIRiU" CanvasType="Group">
-                  <Node Bounds="396,241,65,26" Id="PUwKUwyEnXWMf9fcqU4Sv5">
-                    <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
-                      <Choice Kind="OperationCallFlag" Name="Create" />
-                    </p:NodeReference>
-                    <Pin Id="UnWzoy2INPTLplKMMZ0KkC" Name="Output" Kind="StateOutputPin" />
-                  </Node>
-                  <Node Bounds="382,316,700,418" Id="MOo0QJnFEtoLDlGt2Cydbw">
+                  <Node Bounds="303,286,700,440" Id="MOo0QJnFEtoLDlGt2Cydbw">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -954,18 +935,18 @@
                     <Pin Id="HYQxIMva3y0OBSSslf0Obb" Name="Force" Kind="InputPin" />
                     <Pin Id="AMcXutSCjFYMLfYmyTekv1" Name="Dispose Cached Outputs" Kind="InputPin" />
                     <Pin Id="Fl9ffpsVpmzLzDaRMzuQ0Y" Name="Has Changed" Kind="OutputPin" />
-                    <ControlPoint Id="Ckxe4h2KkoYOPW3rqQ3Xsh" Bounds="528,323" Alignment="Top" />
-                    <ControlPoint Id="PAWSc0NHojPP1CRXk3okES" Bounds="398,727" Alignment="Bottom" />
-                    <ControlPoint Id="A6Ul7OrI2WnPMwkpns9HWA" Bounds="948,323" Alignment="Top" />
-                    <ControlPoint Id="IA4KRKhZMgILxp0OIlp8fT" Bounds="1067,323" Alignment="Top" />
-                    <ControlPoint Id="S2Wn9e453fqLTlvXCPyzOX" Bounds="607,323" Alignment="Top" />
-                    <ControlPoint Id="M8lXLIhebKXPxmmX9KIkfD" Bounds="721,323" Alignment="Top" />
-                    <ControlPoint Id="AAgw1PzdgVPOzA49sGfRCm" Bounds="829,323" Alignment="Top" />
-                    <ControlPoint Id="T0PHhZKEYLbOauOySmJJbQ" Bounds="559,323" Alignment="Top" />
+                    <ControlPoint Id="Ckxe4h2KkoYOPW3rqQ3Xsh" Bounds="449,313" Alignment="Top" />
+                    <ControlPoint Id="PAWSc0NHojPP1CRXk3okES" Bounds="319,719" Alignment="Bottom" />
+                    <ControlPoint Id="A6Ul7OrI2WnPMwkpns9HWA" Bounds="869,313" Alignment="Top" />
+                    <ControlPoint Id="IA4KRKhZMgILxp0OIlp8fT" Bounds="988,313" Alignment="Top" />
+                    <ControlPoint Id="S2Wn9e453fqLTlvXCPyzOX" Bounds="528,313" Alignment="Top" />
+                    <ControlPoint Id="M8lXLIhebKXPxmmX9KIkfD" Bounds="642,313" Alignment="Top" />
+                    <ControlPoint Id="AAgw1PzdgVPOzA49sGfRCm" Bounds="750,313" Alignment="Top" />
+                    <ControlPoint Id="T0PHhZKEYLbOauOySmJJbQ" Bounds="480,313" Alignment="Top" />
                     <Patch Id="TvSzSvU0FWnOk3jyUbaQsp" ManuallySortedPins="true">
                       <Patch Id="Cu8rt9vlgUFNHOrZTCPAqD" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="NakU3N419R3L3xAYWsiQEc" Name="Then" ManuallySortedPins="true" />
-                      <Node Bounds="394,366,134,26" Id="UnbyL1XmxZdOmFCGMt2E5X">
+                      <Node Bounds="315,357,134,26" Id="UnbyL1XmxZdOmFCGMt2E5X">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
@@ -975,7 +956,7 @@
                         <Pin Id="LJ8oLkQ3CXrMLqPAI67Xso" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="DOKb5DAbotzNVI3LqEBtwQ" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="394,626,165,26" Id="Fmf6s97qiEIQEVeLiK2cxH">
+                      <Node Bounds="315,617,165,26" Id="Fmf6s97qiEIQEVeLiK2cxH">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
@@ -985,7 +966,7 @@
                         <Pin Id="AWcidbpNQxdOFjYNgjb0lw" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="NC7FHS3YocvPh5RRl2XoEB" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="394,678,135,26" Id="HfAenEVCMKxMlgUy9BJakL">
+                      <Node Bounds="315,669,135,26" Id="HfAenEVCMKxMlgUy9BJakL">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
@@ -995,7 +976,7 @@
                         <Pin Id="JaBlB2esytYPFZyH8aSlPu" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="FPFTGL9d5P8P5pTlEISdHP" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="394,470,150,26" Id="QgMfsLn49voNOysDOfYugH">
+                      <Node Bounds="315,461,150,26" Id="QgMfsLn49voNOysDOfYugH">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
@@ -1005,7 +986,7 @@
                         <Pin Id="G8JEo14CvbrPBcDKAl3bkC" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="MPON35MdEyfMYaBF3c0As7" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="394,522,173,26" Id="VTgWDeDR0ofPlzbLLHNw5D">
+                      <Node Bounds="315,513,173,26" Id="VTgWDeDR0ofPlzbLLHNw5D">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
@@ -1015,7 +996,7 @@
                         <Pin Id="ShbSFfKgzSgLExTQ7TtH7d" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="TzxTDljP0VJPYKNmxlMR5g" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="394,574,155,26" Id="QVYRPQtuhREOM7exIGBZWK">
+                      <Node Bounds="315,565,155,26" Id="QVYRPQtuhREOM7exIGBZWK">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
@@ -1025,7 +1006,7 @@
                         <Pin Id="CCm5LBZIieJNnML50oqH4R" Name="__set_formal" Kind="InputPin" />
                         <Pin Id="BH5v0KCcuplN4IA7lJxNtb" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="394,418,150,26" Id="OCgZcb9PbemMQQaU6GN1Cr">
+                      <Node Bounds="315,409,150,26" Id="OCgZcb9PbemMQQaU6GN1Cr">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
@@ -1035,7 +1016,7 @@
                         <Pin Id="J229MM6GE9EMZ2KVyG4xKw" Name="Input" Kind="StateInputPin" />
                         <Pin Id="Q5Zqfkn9Ce1OIlLJCs9JZj" Name="__set_formal" Kind="InputPin" />
                       </Node>
-                      <Node Bounds="597,407,22,19" Id="JEgG33qbQFvQP7oXPGNzlR">
+                      <Node Bounds="518,398,22,19" Id="JEgG33qbQFvQP7oXPGNzlR">
                         <p:NodeReference LastCategoryFullName="System.ScreenRecorder.MouseOptions" LastSymbolSource="VL.ScreenRecorder.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="Category" Name="MouseOptions" NeedsToBeDirectParent="true" />
@@ -1044,7 +1025,7 @@
                         <Pin Id="Hk5PgrzPFaJOFiBePBTcjY" Name="Color" Kind="InputPin" />
                         <Pin Id="N8DZXZjl1mQL405t54HUYd" Name="Output" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="691,408,22,19" Id="OLLEVL8vfr0OV5QUwc7C7g">
+                      <Node Bounds="612,399,22,19" Id="OLLEVL8vfr0OV5QUwc7C7g">
                         <p:NodeReference LastCategoryFullName="System.ScreenRecorder.MouseOptions" LastSymbolSource="VL.ScreenRecorder.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="Category" Name="MouseOptions" NeedsToBeDirectParent="true" />
@@ -1053,40 +1034,43 @@
                         <Pin Id="AQIor9LfUyAP3nX9Jk4sC4" Name="Color" Kind="InputPin" />
                         <Pin Id="FkD4PX2FAqDLlGOFMKxZIk" Name="Output" Kind="OutputPin" />
                       </Node>
+                      <Node Bounds="315,313,68,26" Id="PUwKUwyEnXWMf9fcqU4Sv5">
+                        <p:NodeReference LastCategoryFullName="ScreenRecorderLib.MouseOptions" LastSymbolSource="ScreenRecorderLib.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="AssemblyCategory" Name="MouseOptions" />
+                          <Choice Kind="OperationCallFlag" Name="Create" />
+                        </p:NodeReference>
+                        <Pin Id="UnWzoy2INPTLplKMMZ0KkC" Name="Output" Kind="StateOutputPin" />
+                      </Node>
                     </Patch>
                   </Node>
-                  <Pad Id="CJ7nCwz0V3RLYhTvmaJ8gS" Bounds="398,307" />
-                  <ControlPoint Id="P1YT0xBlw6sMjASEEDWHZO" Bounds="398,755" />
-                  <ControlPoint Id="DXLPvmLDY5HPKUs1NCkMlF" Bounds="559,257" />
-                  <ControlPoint Id="Vp0sbNAZf3bLYz2Q6CjEnn" Bounds="829,283" />
-                  <ControlPoint Id="QY6mrb1aP6YNhoiqLv2xay" Bounds="949,283" />
-                  <ControlPoint Id="RZxHC1zJzE6NfVB6F9J6xE" Bounds="1068,283" />
-                  <ControlPoint Id="TNzrLQ2BM78Ll2IuS1UDTO" Bounds="527,232" />
-                  <ControlPoint Id="SCMGB1qGz7nMEgI0x5AbJz" Bounds="607,283" />
-                  <ControlPoint Id="J6xkawSGSS7P6kUFDRPLb5" Bounds="721,283" />
+                  <ControlPoint Id="P1YT0xBlw6sMjASEEDWHZO" Bounds="319,746" />
+                  <ControlPoint Id="DXLPvmLDY5HPKUs1NCkMlF" Bounds="480,248" />
+                  <ControlPoint Id="Vp0sbNAZf3bLYz2Q6CjEnn" Bounds="750,274" />
+                  <ControlPoint Id="QY6mrb1aP6YNhoiqLv2xay" Bounds="870,274" />
+                  <ControlPoint Id="RZxHC1zJzE6NfVB6F9J6xE" Bounds="989,274" />
+                  <ControlPoint Id="TNzrLQ2BM78Ll2IuS1UDTO" Bounds="448,223" />
+                  <ControlPoint Id="SCMGB1qGz7nMEgI0x5AbJz" Bounds="528,274" />
+                  <ControlPoint Id="J6xkawSGSS7P6kUFDRPLb5" Bounds="642,274" />
                   <!--
 
     ************************ ToHex (Internal) ************************
 
 -->
-                  <Node Name="ToHex (Internal)" Bounds="138,313,91,259" Id="QpJ1XZgaBtPP9Huoqo3pLX">
+                  <Node Name="ToHex (Internal)" Bounds="59,304,91,259" Id="QpJ1XZgaBtPP9Huoqo3pLX">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
                       <Choice Kind="OperationDefinition" Name="Operation" />
                     </p:NodeReference>
                     <Patch Id="LxL2iEjWq2JPF9h8NK87LX">
-                      <Node Bounds="151,347,46,19" Id="ScAI0BMGX70LaMa41O7CIL">
+                      <Node Bounds="72,338,46,19" Id="ScAI0BMGX70LaMa41O7CIL">
                         <p:NodeReference LastCategoryFullName="Color.RGBA" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="ToHex" />
                         </p:NodeReference>
-                        <Pin Id="NHQJmipCaTDNW7a1wUJPmk" Name="Color" Kind="InputPin">
-                          <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
-                            <Choice Kind="TypeFlag" Name="RGBA" />
-                          </p:TypeAnnotation>
-                        </Pin>
+                        <Pin Id="NHQJmipCaTDNW7a1wUJPmk" Name="Color" Kind="InputPin" />
                         <Pin Id="P2hhntbn2mmMTbLnh8bOnL" Name="Hex" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="152,385,36,19" Id="Ohqu8J1kc0qPXuwNGz5ScI">
+                      <Node Bounds="73,376,36,19" Id="Ohqu8J1kc0qPXuwNGz5ScI">
                         <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Split (Count)" />
@@ -1100,11 +1084,11 @@
                         <Pin Id="T6pkE8ijFG7LlxeSpZolyy" Name="Substrings" Kind="OutputPin" />
                       </Node>
                       <Link Id="OnBDMmso5I7OTG4M4iVoYz" Ids="P2hhntbn2mmMTbLnh8bOnL,QbpzGjwwhPBOVwYhtT8bbH" />
-                      <ControlPoint Id="A3kfZl0RbxpM4HEZ9y9KVY" Bounds="152,331" />
+                      <ControlPoint Id="A3kfZl0RbxpM4HEZ9y9KVY" Bounds="73,322" />
                       <Link Id="UJezKjVqVyyPJdTriA7YDj" Ids="A3kfZl0RbxpM4HEZ9y9KVY,NHQJmipCaTDNW7a1wUJPmk" />
                       <Pin Id="HFQS6woRMfkPteet4GDB2F" Name="Color" Kind="InputPin" Bounds="152,329" />
                       <Link Id="Mk7ogW1NveaNxrBURswcHi" Ids="HFQS6woRMfkPteet4GDB2F,A3kfZl0RbxpM4HEZ9y9KVY" IsHidden="true" />
-                      <Node Bounds="152,461,45,19" Id="M4kj72KBnz3QXPihV978O5">
+                      <Node Bounds="73,452,65,19" Id="M4kj72KBnz3QXPihV978O5">
                         <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Cons" />
@@ -1116,7 +1100,7 @@
                         <Pin Id="IinnWJvkMFyQBeS4JlnIUM" Name="Input 3" Kind="InputPin" />
                         <Pin Id="LoiljT4FXG6NBZUOJRjIHE" Name="Input 4" Kind="InputPin" />
                       </Node>
-                      <Node Bounds="150,419,65,19" Id="CHGYBY5vwRRLPwS2A69qWA">
+                      <Node Bounds="71,410,65,19" Id="CHGYBY5vwRRLPwS2A69qWA">
                         <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Decons" />
@@ -1129,7 +1113,7 @@
                         <Pin Id="Is3N25LsQDfMnfM1hXHhe0" Name="Result 4" Kind="OutputPin" />
                       </Node>
                       <Link Id="QOOKrF4vorWNQpy8nPDsxX" Ids="T6pkE8ijFG7LlxeSpZolyy,P4zxH5J90LDOy6ErWZ3Wnz" />
-                      <Node Bounds="153,503,34,19" Id="RininOW1BzyNjGdcmboBre">
+                      <Node Bounds="74,494,34,19" Id="RininOW1BzyNjGdcmboBre">
                         <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Join" />
@@ -1139,7 +1123,7 @@
                         <Pin Id="J9RjDokfqEnNyoFmBGicsA" Name="Values" Kind="InputPin" />
                         <Pin Id="EL9ffo2TuSuLDrXR1vAPkL" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <ControlPoint Id="OHpJ2GjGNgTMoWzar47Qhf" Bounds="158,555" />
+                      <ControlPoint Id="OHpJ2GjGNgTMoWzar47Qhf" Bounds="79,546" />
                       <Link Id="CsAfbHtKuPULRJJfSq5hIt" Ids="EL9ffo2TuSuLDrXR1vAPkL,OHpJ2GjGNgTMoWzar47Qhf" />
                       <Pin Id="ACNOKtv2iwFPuM6yGElQLS" Name="Output" Kind="OutputPin" Bounds="180,559" />
                       <Link Id="U4YIhrzWZCLLAEB2l1V3K6" Ids="OHpJ2GjGNgTMoWzar47Qhf,ACNOKtv2iwFPuM6yGElQLS" IsHidden="true" />
@@ -1151,47 +1135,11 @@
                     </Patch>
                   </Node>
                 </Canvas>
-                <Patch Id="M5ZBQXFZd4jMNuJQ74Jexf" Name="Create" ParticipatingElements="PUwKUwyEnXWMf9fcqU4Sv5" />
-                <Patch Id="ANU0UzTzC51Ogy6bJ1xpml" Name="Update">
-                  <Pin Id="UIn9Mn5gS0yP4cLN9H1tWk" Name="Output" Kind="OutputPin" Bounds="404,752" />
-                  <Pin Id="Kv2mKQQ3L3INaVWZLk5ckN" Name="Click Detection Mode" Kind="InputPin" Bounds="792,285" Summary="Polling checks every millisecond if a mouse button is pressed. Hook works better with programmatically generated mouse clicks, but may affect mouse performance and interferes with debugging." />
-                  <Pin Id="EuJjd4W7RsaPWbgAkE5jol" Name="Highlight Radius" Kind="InputPin" Bounds="937,302" DefaultValue="15">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Integer32" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="Dlju6B2aTZEPuXGrp3K9vD" Name="Highlight Duration" Kind="InputPin" Bounds="700,284" DefaultValue="1">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Integer32" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="EfQOFwi4WFbPKIF7U7FNAn" Name="Show Cursor" Kind="InputPin" Bounds="561,267" DefaultValue="True">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Boolean" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="MuLQroOFavAOKebkxqu6Ds" Name="Highlight Clicks" Kind="InputPin" Bounds="527,232" DefaultValue="True">
-                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="Boolean" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="KQs3KtGjDjdP7rsJGOV7Lu" Name="Leftclick Color" Kind="InputPin" Bounds="631,289" DefaultValue="0, 0, 1, 1">
-                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="RGBA" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                  <Pin Id="DpBonSuyLZ8OJRT9sVpYId" Name="Rightclick Color" Kind="InputPin" Bounds="1049,306" DefaultValue="0, 0.5019608, 0, 1">
-                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
-                      <Choice Kind="TypeFlag" Name="RGBA" />
-                    </p:TypeAnnotation>
-                  </Pin>
-                </Patch>
                 <ProcessDefinition Id="Oi58BCzesNtPgqCajItzq4">
                   <Fragment Id="Rj0jho7xMVXOiE8ivo3YSh" Patch="M5ZBQXFZd4jMNuJQ74Jexf" Enabled="true" />
                   <Fragment Id="K7cHwajcGv3PSIWjZKbfYc" Patch="ANU0UzTzC51Ogy6bJ1xpml" Enabled="true" />
                   <Fragment Id="Qn8OAjui4xeONti8j0tzpV" Patch="QpJ1XZgaBtPP9Huoqo3pLX" />
                 </ProcessDefinition>
-                <Link Id="K33oMiEyAYHOwWAgvORbDh" Ids="UnWzoy2INPTLplKMMZ0KkC,CJ7nCwz0V3RLYhTvmaJ8gS" />
                 <Link Id="A0Ys9qXfuAQLY5rDT9m9x7" Ids="Ckxe4h2KkoYOPW3rqQ3Xsh,LJ8oLkQ3CXrMLqPAI67Xso" />
                 <Link Id="JnaZBdYOkvhPX3WafgBk7G" Ids="PAWSc0NHojPP1CRXk3okES,P1YT0xBlw6sMjASEEDWHZO" />
                 <Link Id="T5T2S3JcX0CO27ezy4nDN2" Ids="P1YT0xBlw6sMjASEEDWHZO,UIn9Mn5gS0yP4cLN9H1tWk" IsHidden="true" />
@@ -1199,7 +1147,6 @@
                 <Link Id="PBbR7oxtOl2MiRgXu5Hi6E" Ids="IA4KRKhZMgILxp0OIlp8fT,JaBlB2esytYPFZyH8aSlPu" />
                 <Link Id="G0btmLW9IU8Lbauo47TvDT" Ids="AAgw1PzdgVPOzA49sGfRCm,CCm5LBZIieJNnML50oqH4R" />
                 <Link Id="V1CJkf7ticPLgkzNUuVzut" Ids="T0PHhZKEYLbOauOySmJJbQ,Q5Zqfkn9Ce1OIlLJCs9JZj" />
-                <Link Id="AA74PLVS5qWNSL33ubpaa7" Ids="CJ7nCwz0V3RLYhTvmaJ8gS,KQD9g7uGFSILg6uli47pZZ" />
                 <Link Id="CbyeoTng1FnMUZ9QWGk7lq" Ids="DXLPvmLDY5HPKUs1NCkMlF,T0PHhZKEYLbOauOySmJJbQ" />
                 <Link Id="K7zjuC5Z5cUPHFaOgABkMa" Ids="Kv2mKQQ3L3INaVWZLk5ckN,DXLPvmLDY5HPKUs1NCkMlF" IsHidden="true" />
                 <Link Id="LnU43mMdWdQMY61jwGxfcO" Ids="Vp0sbNAZf3bLYz2Q6CjEnn,AAgw1PzdgVPOzA49sGfRCm" />
@@ -1225,6 +1172,42 @@
                 <Link Id="NH0PWyT6ljXNfTHI7sKRYu" Ids="S2Wn9e453fqLTlvXCPyzOX,Hk5PgrzPFaJOFiBePBTcjY" />
                 <Link Id="QAIVO23kF4NOaLAODq7cBi" Ids="M8lXLIhebKXPxmmX9KIkfD,AQIor9LfUyAP3nX9Jk4sC4" />
                 <Link Id="SGwoZjoPiLzOdrAryJAhmu" Ids="FkD4PX2FAqDLlGOFMKxZIk,ShbSFfKgzSgLExTQ7TtH7d" />
+                <Patch Id="M5ZBQXFZd4jMNuJQ74Jexf" Name="Create" />
+                <Patch Id="ANU0UzTzC51Ogy6bJ1xpml" Name="Update">
+                  <Pin Id="MuLQroOFavAOKebkxqu6Ds" Name="Highlight Clicks" Kind="InputPin" Bounds="527,232" DefaultValue="True">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="Kv2mKQQ3L3INaVWZLk5ckN" Name="Click Detection Mode" Kind="InputPin" Bounds="792,285" Summary="Polling checks every millisecond if a mouse button is pressed. Hook works better with programmatically generated mouse clicks, but may affect mouse performance and interferes with debugging." />
+                  <Pin Id="KQs3KtGjDjdP7rsJGOV7Lu" Name="Leftclick Color" Kind="InputPin" Bounds="631,289" DefaultValue="0, 0, 1, 1">
+                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="RGBA" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="DpBonSuyLZ8OJRT9sVpYId" Name="Rightclick Color" Kind="InputPin" Bounds="1049,306" DefaultValue="0, 0.5019608, 0, 1">
+                    <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="RGBA" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="EuJjd4W7RsaPWbgAkE5jol" Name="Highlight Radius" Kind="InputPin" Bounds="937,302" DefaultValue="15">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="Dlju6B2aTZEPuXGrp3K9vD" Name="Highlight Duration" Kind="InputPin" Bounds="700,284" DefaultValue="1">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Integer32" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="EfQOFwi4WFbPKIF7U7FNAn" Name="Show Cursor" Kind="InputPin" Bounds="561,267" DefaultValue="True">
+                    <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="TypeFlag" Name="Boolean" />
+                    </p:TypeAnnotation>
+                  </Pin>
+                  <Pin Id="UIn9Mn5gS0yP4cLN9H1tWk" Name="Output" Kind="OutputPin" Bounds="404,752" />
+                </Patch>
+                <Link Id="MfZmPRPCeNwMgVoVvliyHc" Ids="UnWzoy2INPTLplKMMZ0KkC,KQD9g7uGFSILg6uli47pZZ" />
               </Patch>
             </Node>
             <ControlPoint Id="KTKx18j7VBeN0m3IgooVbm" Bounds="1188,4" />
@@ -1282,6 +1265,9 @@
                     <Pin Id="LcIjOCEqGzoObpmeTlKhcn" Name="Force" Kind="InputPin" />
                     <Pin Id="VCam9siHNesL8P0IDxEh4I" Name="Dispose Cached Outputs" Kind="InputPin" />
                     <Pin Id="EGhG2Wet96KLCsGDcb5dY7" Name="Has Changed" Kind="OutputPin" />
+                    <ControlPoint Id="KvD6Yl34TDtPKWcgLEh4kj" Bounds="388,153" Alignment="Top" />
+                    <ControlPoint Id="MW3dkFfKGj0NTzBQKJJ6X8" Bounds="413,455" Alignment="Bottom" />
+                    <ControlPoint Id="UUQd7rrxy7vNGY683d0UzW" Bounds="331,153" Alignment="Top" />
                     <Patch Id="LGYgVJ57KV3NL3lsd2MWoY" ManuallySortedPins="true">
                       <Patch Id="K5SNXrtFKOxLLGOCeWJdMY" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="DXCaKAm90rYQYBcqTtpw6X" Name="Then" ManuallySortedPins="true" />
@@ -1294,11 +1280,7 @@
                           <PinReference Kind="InputPin" Name="Left" />
                         </p:NodeReference>
                         <Pin Id="AZPJDHEOeCqMBYOarnO5O1" Name="Monitor Device Name" Kind="InputPin" />
-                        <Pin Id="DphRDdOHTwNOAbgTQCPS0p" Name="Left" Kind="InputPin">
-                          <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                            <Choice Kind="TypeFlag" Name="Integer32" />
-                          </p:TypeAnnotation>
-                        </Pin>
+                        <Pin Id="DphRDdOHTwNOAbgTQCPS0p" Name="Left" Kind="InputPin" />
                         <Pin Id="AJtCVsKGPP2MHD3MA0UECI" Name="Top" Kind="InputPin" />
                         <Pin Id="Gb3VcbMhVEfLw0aS9NAdYc" Name="Right" Kind="InputPin" />
                         <Pin Id="IAH0f1s6O96QJPWLbYk2IC" Name="Bottom" Kind="InputPin" />
@@ -1377,19 +1359,10 @@
                         <Pin Id="MGl5tSRAQe6MT8IgvRGhIj" Name="Result" Kind="OutputPin" />
                       </Node>
                     </Patch>
-                    <ControlPoint Id="KvD6Yl34TDtPKWcgLEh4kj" Bounds="388,153" Alignment="Top" />
-                    <ControlPoint Id="MW3dkFfKGj0NTzBQKJJ6X8" Bounds="413,455" Alignment="Bottom" />
-                    <ControlPoint Id="UUQd7rrxy7vNGY683d0UzW" Bounds="331,153" Alignment="Top" />
                   </Node>
                   <ControlPoint Id="H81vWwsVR9fQXIgv1ZkxkB" Bounds="386,127" />
                   <ControlPoint Id="L8i9qrh7u4qLhyYBFzjUfg" Bounds="331,109" />
                 </Canvas>
-                <Patch Id="KEFVAmLBOXaNrzJzN8UnFJ" Name="Create" />
-                <Patch Id="GnfJX4x5cuzNfWhBmxB5ES" Name="Update">
-                  <Pin Id="UT5Vfb7SEFGNiTvq6fRaxN" Name="Output" Kind="OutputPin" Bounds="418,477" />
-                  <Pin Id="OOcIzjRxkLoPeteMqf8TFD" Name="Rectangle" Kind="InputPin" Bounds="386,127" />
-                  <Pin Id="HtP5m2fcP84LIQqNW730hG" Name="Monitor Device Name" Kind="InputPin" Bounds="331,109" />
-                </Patch>
                 <ProcessDefinition Id="Vaw47akxom3NnlDYXg6NnS">
                   <Fragment Id="FzCxtDhSQddPTsaUA8j6AL" Patch="KEFVAmLBOXaNrzJzN8UnFJ" Enabled="true" />
                   <Fragment Id="CDhqjcGkCoKLYUH7KZaNH7" Patch="GnfJX4x5cuzNfWhBmxB5ES" Enabled="true" />
@@ -1415,6 +1388,12 @@
                 <Link Id="Il0IdXhIuBhOkrWdLiNIVW" Ids="UUQd7rrxy7vNGY683d0UzW,AZPJDHEOeCqMBYOarnO5O1" />
                 <Link Id="PuvdSbyBDfFPy3nRrEiXAZ" Ids="L8i9qrh7u4qLhyYBFzjUfg,UUQd7rrxy7vNGY683d0UzW" />
                 <Link Id="G4UzNowGuteOw8B9ik09Np" Ids="HtP5m2fcP84LIQqNW730hG,L8i9qrh7u4qLhyYBFzjUfg" IsHidden="true" />
+                <Patch Id="KEFVAmLBOXaNrzJzN8UnFJ" Name="Create" />
+                <Patch Id="GnfJX4x5cuzNfWhBmxB5ES" Name="Update">
+                  <Pin Id="HtP5m2fcP84LIQqNW730hG" Name="Monitor Device Name" Kind="InputPin" Bounds="331,109" />
+                  <Pin Id="OOcIzjRxkLoPeteMqf8TFD" Name="Rectangle" Kind="InputPin" Bounds="386,127" />
+                  <Pin Id="UT5Vfb7SEFGNiTvq6fRaxN" Name="Output" Kind="OutputPin" Bounds="418,477" />
+                </Patch>
               </Patch>
             </Node>
             <!--
@@ -1428,8 +1407,8 @@
               </p:NodeReference>
               <Patch Id="AZPXNKOJZX3PBOBblZEjQH">
                 <Canvas Id="DhCj3d1P4o5OfyXFRDoe1g" CanvasType="Group">
-                  <ControlPoint Id="DPqXnNJkbHaNaEmOHQiRzn" Bounds="447,574" />
-                  <Node Bounds="360,172,311,371" Id="JrMv2b76b7LQBlfwKpOQLV">
+                  <ControlPoint Id="DPqXnNJkbHaNaEmOHQiRzn" Bounds="444,673" />
+                  <Node Bounds="420,382,248,261" Id="JrMv2b76b7LQBlfwKpOQLV">
                     <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -1438,10 +1417,11 @@
                     <Pin Id="C0CK06z9VtBPWi6Sj5KwXF" Name="Force" Kind="InputPin" />
                     <Pin Id="OYZtcavnKRLQEWBrWlMVFy" Name="Dispose Cached Outputs" Kind="InputPin" />
                     <Pin Id="EFtd9eaCwcoMQsyUDDmQuV" Name="Has Changed" Kind="OutputPin" />
+                    <ControlPoint Id="VMjFRsRIDVbQXjWWPGR7U1" Bounds="446,638" Alignment="Bottom" />
                     <Patch Id="AyTJm4gDFJkOvHtNk7ppGX" ManuallySortedPins="true">
                       <Patch Id="CdJtqFKG832NTDwFNS1aYI" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="GTTZTn0XJyaPo3rYMGB9jL" Name="Then" ManuallySortedPins="true" />
-                      <Node Bounds="445,484,85,26" Id="QllpTx1hxEeMIrx8DA4qPF">
+                      <Node Bounds="442,583,85,26" Id="QllpTx1hxEeMIrx8DA4qPF">
                         <p:NodeReference LastCategoryFullName="ScreenRecorderLib.DisplayOptions" LastSymbolSource="ScreenRecorderLib.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="DisplayOptions" />
@@ -1450,27 +1430,13 @@
                           <PinReference Kind="InputPin" Name="Left" />
                         </p:NodeReference>
                         <Pin Id="BZDgemY4azLN4k8mXmUQVf" Name="Monitor Device Name" Kind="InputPin" />
-                        <Pin Id="InsNJWi92AyP0ZZNNmxuBD" Name="Left" Kind="InputPin">
-                          <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                            <Choice Kind="TypeFlag" Name="Integer32" />
-                          </p:TypeAnnotation>
-                        </Pin>
+                        <Pin Id="InsNJWi92AyP0ZZNNmxuBD" Name="Left" Kind="InputPin" />
                         <Pin Id="Ikoed1InHZ9MFONcodguPs" Name="Top" Kind="InputPin" />
                         <Pin Id="DCROcfzxhc5LcxFW5e5AtV" Name="Right" Kind="InputPin" />
                         <Pin Id="E6oNkVeXEA3LRmANJbbZ4Z" Name="Bottom" Kind="InputPin" />
                         <Pin Id="FkOu0tjgn6ULszzBIF4kt5" Name="Output" Kind="StateOutputPin" />
                       </Node>
-                      <Node Bounds="372,233,87,26" Id="Eh4V3ND0G1xPF2IxtuO5g9">
-                        <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
-                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <CategoryReference Kind="AssemblyCategory" Name="Control" NeedsToBeDirectParent="true" />
-                          <Choice Kind="OperationCallFlag" Name="ClientRectangle" />
-                        </p:NodeReference>
-                        <Pin Id="QMysnu8skeRM4zV9LeYy7a" Name="Input" Kind="StateInputPin" />
-                        <Pin Id="VzIhHjyCMyJMDdYV3Bl3Vo" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="FM7bvwUNgj6NnUgCwVia4h" Name="Client Rectangle" Kind="OutputPin" />
-                      </Node>
-                      <Node Bounds="546,331,51,26" Id="MJkS3djOWleLN2JFEHux0D">
+                      <Node Bounds="543,430,51,26" Id="MJkS3djOWleLN2JFEHux0D">
                         <p:NodeReference LastCategoryFullName="System.Drawing.Rectangle" LastSymbolSource="System.Drawing.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Right" />
@@ -1480,7 +1446,7 @@
                         <Pin Id="D52xkLXOL1lPhAuFFWOkBR" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="IVhKauF1KPUQJpaWqkGaZu" Name="Right" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="608,331,51,26" Id="GUFGceONKaZObshk2KXryM">
+                      <Node Bounds="605,430,51,26" Id="GUFGceONKaZObshk2KXryM">
                         <p:NodeReference LastCategoryFullName="System.Drawing.Rectangle" LastSymbolSource="System.Drawing.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Bottom" />
@@ -1490,35 +1456,7 @@
                         <Pin Id="IKVySqgt6rjLkwnvirjY2g" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="MnSdpmM9ynxPDDBMx5KUTH" Name="Bottom" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="378,410,73,19" Id="GNxjeDzGlpgOZzdDc1ciOo">
-                        <p:NodeReference LastCategoryFullName="System.Windows.Forms.Screen" LastSymbolSource="System.Windows.Forms.dll">
-                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="FromControl" />
-                        </p:NodeReference>
-                        <Pin Id="GaisaELyq79P3p8K3mJH3D" Name="Control" Kind="InputPin" />
-                        <Pin Id="UsXkjY1MEnWNOnFfW9hCEE" Name="Result" Kind="OutputPin" />
-                      </Node>
-                      <Node Bounds="378,445,72,26" Id="SlTW7zgcCXtMhL1ReHSDgw">
-                        <p:NodeReference LastCategoryFullName="System.Windows.Forms.Screen" LastSymbolSource="System.Windows.Forms.dll">
-                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <CategoryReference Kind="AssemblyCategory" Name="Screen" />
-                          <Choice Kind="OperationCallFlag" Name="DeviceName" />
-                        </p:NodeReference>
-                        <Pin Id="M0ut4zVsAh4OWMhGdajcno" Name="Input" Kind="StateInputPin" />
-                        <Pin Id="JrEJNogPNLdNBkQtKQvEo6" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="CAjPfTqA65XPUfQ9X0UI5a" Name="Device Name" Kind="OutputPin" />
-                      </Node>
-                      <Node Bounds="375,278,81,26" Id="K09l8Er5R2DPuFQu5wtbTd">
-                        <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
-                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                          <Choice Kind="OperationCallFlag" Name="PointToScreen" />
-                        </p:NodeReference>
-                        <Pin Id="N3e9hvAcQc5NeF0GEO1qqy" Name="Input" Kind="StateInputPin" />
-                        <Pin Id="IB0862GSiVaOxKioH1jHKV" Name="P" Kind="InputPin" />
-                        <Pin Id="LEjko2Hqr2lP8GvrPqOfOp" Name="Output" Kind="StateOutputPin" />
-                        <Pin Id="LNsxZsZMZSbNAJIs4xKuDN" Name="Result" Kind="OutputPin" />
-                      </Node>
-                      <Node Bounds="435,329,34,26" Id="AoI6B9LaU7vNhWFtvcPBzd">
+                      <Node Bounds="432,428,34,26" Id="AoI6B9LaU7vNhWFtvcPBzd">
                         <p:NodeReference LastCategoryFullName="System.Drawing.Point" LastSymbolSource="System.Drawing.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="AssemblyCategory" Name="Point" />
@@ -1528,7 +1466,7 @@
                         <Pin Id="G3G2TssKmQaMRuyBruWClx" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="SZhO0D3I6W4PexzQfFhsJK" Name="X" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="496,329,34,26" Id="OC3pBICrrMxLJc5CpVUafN">
+                      <Node Bounds="493,428,34,26" Id="OC3pBICrrMxLJc5CpVUafN">
                         <p:NodeReference LastCategoryFullName="System.Drawing.Point" LastSymbolSource="System.Drawing.dll">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="Y" />
@@ -1538,7 +1476,7 @@
                         <Pin Id="L5wT4NIP7zTLkNXdL8FNaQ" Name="Output" Kind="StateOutputPin" />
                         <Pin Id="S6pdfcDpQaMMYBt9GLzagk" Name="Y" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="499,390,45,19" Id="EThfr8ZfvqJMeZP3Vf0EX9">
+                      <Node Bounds="496,489,45,19" Id="EThfr8ZfvqJMeZP3Vf0EX9">
                         <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="+" />
@@ -1552,7 +1490,7 @@
                           </p:TypeAnnotation>
                         </Pin>
                       </Node>
-                      <Node Bounds="558,387,45,19" Id="NDwiL9MWRcNNyeYNru7xK3">
+                      <Node Bounds="555,486,45,19" Id="NDwiL9MWRcNNyeYNru7xK3">
                         <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <Choice Kind="OperationCallFlag" Name="+" />
@@ -1567,10 +1505,78 @@
                         </Pin>
                       </Node>
                     </Patch>
-                    <ControlPoint Id="VMjFRsRIDVbQXjWWPGR7U1" Bounds="449,537" Alignment="Bottom" />
-                    <ControlPoint Id="DyVC5PP2jZVLZnnnvmAeFw" Bounds="373,178" Alignment="Top" />
+                    <ControlPoint Id="VKAicRkgb0jNBrD7oYFP3B" Bounds="591,389" Alignment="Top" />
+                    <ControlPoint Id="PFRsh9tLwOJO96F923bFUp" Bounds="511,389" Alignment="Top" />
+                    <ControlPoint Id="NTraGj7hLmlOJbAJlRmsF2" Bounds="455,389" Alignment="Top" />
                   </Node>
-                  <ControlPoint Id="UF5YVVkLiFDPW3GBm3z7wh" Bounds="372,141" />
+                  <ControlPoint Id="UF5YVVkLiFDPW3GBm3z7wh" Bounds="396,64" />
+                  <Node Bounds="387,127,225,206" Id="M65Se0xhyrUPr6EBXlgznE">
+                    <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+                      <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                      <Choice Kind="ApplicationStatefulRegion" Name="If" />
+                      <CategoryReference Kind="Category" Name="Primitive" />
+                    </p:NodeReference>
+                    <Pin Id="Rk3QFwloxFAL9HvU2qfzkS" Name="Condition" Kind="InputPin" />
+                    <Patch Id="Cjfi9w51FxrMswmB5WApRK" ManuallySortedPins="true">
+                      <Patch Id="K57egfosjGKNAxoZ0NiFMJ" Name="Create" ManuallySortedPins="true" />
+                      <Patch Id="PHT5WLdQ6epPwlaxbWZipg" Name="Then" ManuallySortedPins="true" />
+                      <Node Bounds="399,150,87,26" Id="SYsvLt2GKeFNUl3sqTFCVN">
+                        <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="AssemblyCategory" Name="Control" NeedsToBeDirectParent="true" />
+                          <Choice Kind="OperationCallFlag" Name="ClientRectangle" />
+                        </p:NodeReference>
+                        <Pin Id="HEW4584BkjFLeuIP8G3GAS" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="Id6okfGYbZIQQTyJ7BNYF3" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="FC4fafw5LHWOaoVD3nlkcR" Name="Client Rectangle" Kind="OutputPin" />
+                      </Node>
+                      <Node Bounds="402,195,81,26" Id="RDnoSzWIVbqQYnlAD1wFjt">
+                        <p:NodeReference LastCategoryFullName="System.Windows.Forms.Control" LastSymbolSource="System.Windows.Forms.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="PointToScreen" />
+                        </p:NodeReference>
+                        <Pin Id="UnuDtqEnZBePeVSswNlUCZ" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="RMPzLywazNtMP2idPD3ecE" Name="P" Kind="InputPin" />
+                        <Pin Id="AAEb1EyDki0N5f7YJ5UEBJ" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="HXG9Nzl2UpOO8dqUHpTwj2" Name="Result" Kind="OutputPin" />
+                      </Node>
+                      <Node Bounds="400,237,73,19" Id="BwLGVkBHJS3Nlhw1NQjIk4">
+                        <p:NodeReference LastCategoryFullName="System.Windows.Forms.Screen" LastSymbolSource="System.Windows.Forms.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="FromControl" />
+                        </p:NodeReference>
+                        <Pin Id="RVOlm7M3xP9QK5Tmepskyg" Name="Control" Kind="InputPin" />
+                        <Pin Id="QdZ9pqOFFxfMeSzBVChqpo" Name="Result" Kind="OutputPin" />
+                      </Node>
+                      <Node Bounds="404,272,72,26" Id="A7M9OoA4ED6Mnet3wZKchF">
+                        <p:NodeReference LastCategoryFullName="System.Windows.Forms.Screen" LastSymbolSource="System.Windows.Forms.dll">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <CategoryReference Kind="AssemblyCategory" Name="Screen" />
+                          <Choice Kind="OperationCallFlag" Name="DeviceName" />
+                        </p:NodeReference>
+                        <Pin Id="JUCDENlQ2PWNCyX9SAHcoA" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="NtIbt9SAsu4NpTjU3eE1uX" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="Ipp9WWqdUpLPcGPNL1dXbU" Name="Device Name" Kind="OutputPin" />
+                      </Node>
+                    </Patch>
+                    <ControlPoint Id="SguHHalzT6yL7yzgVVZAqz" Bounds="406,134" Alignment="Top" />
+                    <ControlPoint Id="VpOSt6kFMMbNMNp6dc9QbS" Bounds="407,328" Alignment="Bottom" />
+                    <ControlPoint Id="C7gZjT4c3MKNe9vJaJahfU" Bounds="473,328" Alignment="Bottom" />
+                    <ControlPoint Id="VSaVhvnkifJPzVIDRu3N2z" Bounds="453,134" Alignment="Top" />
+                    <ControlPoint Id="QiaWGaqc1avOnlEo2fPHZX" Bounds="507,328" Alignment="Bottom" />
+                    <ControlPoint Id="FXRFPihbnrHOPm2O5v8Geh" Bounds="492,134" Alignment="Top" />
+                    <ControlPoint Id="Nn4COzDrigAQWHPitrg03t" Bounds="590,328" Alignment="Bottom" />
+                    <ControlPoint Id="CquX988AhgKLnQ5BrnMwiM" Bounds="532,134" Alignment="Top" />
+                  </Node>
+                  <Node Bounds="388,92,65,19" Id="TXrpyrIKRViNytd3wEnq0o">
+                    <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
+                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                      <Choice Kind="OperationCallFlag" Name="IsAssigned" />
+                    </p:NodeReference>
+                    <Pin Id="ToaJBhi7s4iPdz82Q4llXF" Name="X" Kind="InputPin" />
+                    <Pin Id="Ck9qygcGMU1PL7Oeyc0iy2" Name="Result" Kind="OutputPin" />
+                    <Pin Id="MvkbRkJuluoQUE2PfIQX7Q" Name="Not Assigned" Kind="OutputPin" />
+                  </Node>
                 </Canvas>
                 <Patch Id="AuxXFtK51OXPWFZmSNnjra" Name="Create" />
                 <Patch Id="ABiM6U43fhHN2UZ1PR8QUv" Name="Update">
@@ -1583,13 +1589,7 @@
                 </ProcessDefinition>
                 <Link Id="KmJbfNnS6DmLY1BffALvS1" Ids="DPqXnNJkbHaNaEmOHQiRzn,NchHOjcqTxSNZtMaMm26CK" IsHidden="true" />
                 <Link Id="NTaZzc3Q0DTLSGpWfFS1VV" Ids="VMjFRsRIDVbQXjWWPGR7U1,DPqXnNJkbHaNaEmOHQiRzn" />
-                <Link Id="PQouUF4tQnlL6gS9J4f6uk" Ids="CAjPfTqA65XPUfQ9X0UI5a,BZDgemY4azLN4k8mXmUQVf" />
-                <Link Id="Tq506awpya4N4DK8MCMcHD" Ids="FM7bvwUNgj6NnUgCwVia4h,GBMDdHHByqIPdVvZye57iv" />
-                <Link Id="QEtfnDtYW1xN5zi3dzmlvg" Ids="FM7bvwUNgj6NnUgCwVia4h,QqcyEwyLJFkMKP7cK08NNe" />
-                <Link Id="DJqYSDqwwNnO4qOUVqv8dK" Ids="UsXkjY1MEnWNOnFfW9hCEE,M0ut4zVsAh4OWMhGdajcno" />
-                <Link Id="U1bjfgJWuapOkuXoxmi6GP" Ids="LNsxZsZMZSbNAJIs4xKuDN,F0lN113gohVMSt6Slsa4QM" />
                 <Link Id="K0l9E0iCMxiLZm16WqIFq6" Ids="SZhO0D3I6W4PexzQfFhsJK,BOecgxmK0GaMu3gbUv3GmK" />
-                <Link Id="NMkphIA4EqLQSVHu4Uaamq" Ids="LNsxZsZMZSbNAJIs4xKuDN,EOy0aogGP4wNTBIKJmIC48" />
                 <Link Id="I7MSZ5TD5NGLFvaVog7C0E" Ids="S6pdfcDpQaMMYBt9GLzagk,Ikoed1InHZ9MFONcodguPs" />
                 <Link Id="Uh353TTB6BcNNN9CLOtgFE" Ids="IVhKauF1KPUQJpaWqkGaZu,EvTUbiUTuOJLLJL1FQjX78" />
                 <Link Id="N23pmC97MFvMUN8BxlOt3e" Ids="SZhO0D3I6W4PexzQfFhsJK,InsNJWi92AyP0ZZNNmxuBD" />
@@ -1597,12 +1597,30 @@
                 <Link Id="NPbdNPnF9qHMQPf4zqtbDC" Ids="MnSdpmM9ynxPDDBMx5KUTH,Iv1hjfwjVCrPJ7AEaDDgs0" />
                 <Link Id="JwrJnp2kEw7MC3Mq1BaKUA" Ids="IqniQqbqsGJPoor0c1yXyK,DCROcfzxhc5LcxFW5e5AtV" />
                 <Link Id="IAFhyjwv3VoNI6LLrCQZxt" Ids="UEN2D8w8rqJLrw5ilyCbNf,E6oNkVeXEA3LRmANJbbZ4Z" />
-                <Link Id="BISXc8HWLaPNvuwG95wnBl" Ids="VzIhHjyCMyJMDdYV3Bl3Vo,N3e9hvAcQc5NeF0GEO1qqy" />
-                <Link Id="HKG9JD2QUf4QI0QfXqESPE" Ids="LEjko2Hqr2lP8GvrPqOfOp,GaisaELyq79P3p8K3mJH3D" />
                 <Link Id="QdpMuncesI8OGxuxlwJWuI" Ids="FkOu0tjgn6ULszzBIF4kt5,VMjFRsRIDVbQXjWWPGR7U1" />
-                <Link Id="SqAKA4U7fBtOn6CMwuvig3" Ids="DyVC5PP2jZVLZnnnvmAeFw,QMysnu8skeRM4zV9LeYy7a" />
-                <Link Id="SJXBAAN5QGJMD4tuyigZwf" Ids="UF5YVVkLiFDPW3GBm3z7wh,DyVC5PP2jZVLZnnnvmAeFw" />
                 <Link Id="TcYqLUEb74iQFi0h5vVCrL" Ids="PHB18F2CDATLLxAJ9lNK1D,UF5YVVkLiFDPW3GBm3z7wh" IsHidden="true" />
+                <Link Id="P1KTWSgYmwULlL68G3rTPH" Ids="UF5YVVkLiFDPW3GBm3z7wh,ToaJBhi7s4iPdz82Q4llXF" />
+                <Link Id="DVeKwOcioXmOkojlOoB8yO" Ids="Ck9qygcGMU1PL7Oeyc0iy2,Rk3QFwloxFAL9HvU2qfzkS" />
+                <Link Id="HUsdqIjmnjwLwoVLnwDSsm" Ids="Id6okfGYbZIQQTyJ7BNYF3,UnuDtqEnZBePeVSswNlUCZ" />
+                <Link Id="TTdCVp8rjdrNBOscE0ebbH" Ids="SguHHalzT6yL7yzgVVZAqz,VpOSt6kFMMbNMNp6dc9QbS" IsFeedback="true" />
+                <Link Id="Bu5zXZEy5bRLXQlfyG6abu" Ids="SguHHalzT6yL7yzgVVZAqz,HEW4584BkjFLeuIP8G3GAS" />
+                <Link Id="Fsj56x0f1BNMIHyhSwn91A" Ids="UF5YVVkLiFDPW3GBm3z7wh,SguHHalzT6yL7yzgVVZAqz" />
+                <Link Id="GT4WxUQMQTINVoKz8MpNRr" Ids="VKAicRkgb0jNBrD7oYFP3B,GBMDdHHByqIPdVvZye57iv" />
+                <Link Id="Gia3iA9NYOZO9eIhE9yTjc" Ids="VKAicRkgb0jNBrD7oYFP3B,QqcyEwyLJFkMKP7cK08NNe" />
+                <Link Id="SyJRmioi020NeLldTPv2Nb" Ids="PFRsh9tLwOJO96F923bFUp,F0lN113gohVMSt6Slsa4QM" />
+                <Link Id="BdRWHcS2aVbM95noVW6sfT" Ids="PFRsh9tLwOJO96F923bFUp,EOy0aogGP4wNTBIKJmIC48" />
+                <Link Id="JtkbAsWbXitMBWKdEw3tM6" Ids="QdZ9pqOFFxfMeSzBVChqpo,JUCDENlQ2PWNCyX9SAHcoA" />
+                <Link Id="Vhm7Fbucku0O7EWopWsqGa" Ids="AAEb1EyDki0N5f7YJ5UEBJ,RVOlm7M3xP9QK5Tmepskyg" />
+                <Link Id="NcjCFBpCXytPtl8fDFN3tJ" Ids="NTraGj7hLmlOJbAJlRmsF2,BZDgemY4azLN4k8mXmUQVf" />
+                <Link Id="LsJfiZWIRxiNFHiSRxXWKF" Ids="VSaVhvnkifJPzVIDRu3N2z,C7gZjT4c3MKNe9vJaJahfU" IsFeedback="true" />
+                <Link Id="CbuIYocN2liPvKK9qIOJJA" Ids="Ipp9WWqdUpLPcGPNL1dXbU,C7gZjT4c3MKNe9vJaJahfU" />
+                <Link Id="FbH3QZyqNxGMUdvBr1qtnG" Ids="C7gZjT4c3MKNe9vJaJahfU,NTraGj7hLmlOJbAJlRmsF2" />
+                <Link Id="Q1yvgIebndkNBcy44Mo4u3" Ids="FXRFPihbnrHOPm2O5v8Geh,QiaWGaqc1avOnlEo2fPHZX" IsFeedback="true" />
+                <Link Id="FdfvhGEjBhaOo2l78nUSxl" Ids="HXG9Nzl2UpOO8dqUHpTwj2,QiaWGaqc1avOnlEo2fPHZX" />
+                <Link Id="Kjv9gOLKwenMqp3Prt6UBq" Ids="QiaWGaqc1avOnlEo2fPHZX,PFRsh9tLwOJO96F923bFUp" />
+                <Link Id="PJc1sxg8l2eO0qKGgvzqvg" Ids="CquX988AhgKLnQ5BrnMwiM,Nn4COzDrigAQWHPitrg03t" IsFeedback="true" />
+                <Link Id="J4WIpSTDkr8MIXc0lsIvq1" Ids="FC4fafw5LHWOaoVD3nlkcR,Nn4COzDrigAQWHPitrg03t" />
+                <Link Id="U0VUdOTmMGiNCcWTTrovQf" Ids="Nn4COzDrigAQWHPitrg03t,VKAicRkgb0jNBrD7oYFP3B" />
               </Patch>
             </Node>
           </Canvas>
@@ -1779,9 +1797,9 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PLlPLueDFIDMcnEldjMBxW" Location="VL.Skia" Version="2020.2.2" />
+  <NugetDependency Id="PLlPLueDFIDMcnEldjMBxW" Location="VL.Skia" Version="2021.4.0-0602-g8ed5e0ce29" />
   <PlatformDependency Id="Eha4BDiJhUzLzqSIkRxEKP" Location="System.Windows.Forms" />
   <PlatformDependency Id="Roqw4DhIpE4LTAGYdRNGwz" Location="System.Drawing" />
-  <NugetDependency Id="Hfma6XEMqIoMSy8jsWBRUI" Location="ScreenRecorderLib" Version="2.9.0" />
+  <NugetDependency Id="Hfma6XEMqIoMSy8jsWBRUI" Location="ScreenRecorderLib" Version="3.1.1" />
   <PlatformDependency Id="Ac2fA2xnYJjNsFkmzGuPzz" Location="./lib/ScreenRecorderLib.dll" />
 </Document>

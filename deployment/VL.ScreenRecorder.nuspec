@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.ScreenRecorder</id>
-    <version>0.0.1-alpha</version>
+    <version>0.0.2-alpha</version>
     <title>VL.ScreenRecorder</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
-    <projectUrl>http://vvvv.org</projectUrl>
+    <projectUrl>https://github.com/vvvv/VL.ScreenRecorder</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A simple screen recorder for VL</summary>
     <description>A simple screen recorder for VL</description>
