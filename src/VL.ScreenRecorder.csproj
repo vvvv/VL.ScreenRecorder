@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <BaseOutputPath>..\lib</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="VL.Core" Version="2021.4.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ScreenRecorderLib">
+      <HintPath>..\lib\ScreenRecorderLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

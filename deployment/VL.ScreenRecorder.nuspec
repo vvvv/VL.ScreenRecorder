@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.ScreenRecorder</id>
-    <version>0.0.2-alpha</version>
+    <version>0.1.0-alpha</version>
     <title>VL.ScreenRecorder</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -10,7 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>A simple screen recorder for VL</summary>
     <description>A simple screen recorder for VL</description>
-    <tags>VL, movie, screen, mp4, video, record</tags>
+    <tags>VL, screen, display, window, capture, record, movie, video, mp4</tags>
 	<icon>icon\nugeticon.png</icon>
   </metadata>
   <files>

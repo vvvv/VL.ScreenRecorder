@@ -1,1 +1,4 @@
 /.vl
+/lib/Debug/
+/src/.vs/
+/src/obj
