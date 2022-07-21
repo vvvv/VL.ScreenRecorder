@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <BaseOutputPath>..\lib</BaseOutputPath>
+    <OutputPath>..\lib</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>

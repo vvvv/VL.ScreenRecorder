@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="QstjL8WuWJQP1QXuyvyZtD" LanguageVersion="2021.4.9.982" Version="0.128">
-  <NugetDependency Id="PraS1Fx8n9POPKQToJAuvy" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" Id="QstjL8WuWJQP1QXuyvyZtD" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <NugetDependency Id="PraS1Fx8n9POPKQToJAuvy" Location="VL.CoreLib" Version="2021.4.10" />
   <Patch Id="AOby7Uwn8JoMbVAbx8jqsY">
     <Canvas Id="U1u1YbwYRPCMtnrekFI9Y3" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -110,7 +110,7 @@
             <Pin Id="T5ypgWtUABhO9vDr4y7kvK" Name="Quality" Kind="InputPin" />
             <Pin Id="U8eyUfVy9vOLMzlRQQKsVR" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="LqflPQp0VPcMq7cqs4MjhK" Comment="Iteration Count" Bounds="77,223,35,15" ShowValueBox="true" isIOBox="true" Value="24">
+          <Pad Id="LqflPQp0VPcMq7cqs4MjhK" Comment="Iteration Count" Bounds="76,223,35,15" ShowValueBox="true" isIOBox="true" Value="24">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -168,7 +168,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="DCB8j4x0bLHL4XB1lzasyG" Name="Bounds" Kind="InputPin" DefaultValue="1166, 130, 600, 400">
+            <Pin Id="DCB8j4x0bLHL4XB1lzasyG" Name="Bounds" Kind="InputPin" DefaultValue="1121, 53, 600, 400">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastSymbolSource="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
@@ -212,15 +212,15 @@
             <Pin Id="GfZmIqVNIGQOzXhrWRBpJ8" Name="Crop Rectangle" Kind="InputPin" />
             <Pin Id="FwqkSVYj0dsORkZwY7MgDF" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="173,543,88,19" Id="CAVniZkxxMGMqhgeOCwQIN">
+          <Node Bounds="100,533,88,19" Id="CAVniZkxxMGMqhgeOCwQIN">
             <p:NodeReference>
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SourceOptions (Control)" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="C1nmniA35r3Nbi5qGyFsp3" Name="Control" Kind="InputPin" />
-            <Pin Id="SEKGinkUfjLMk5qIe53ESF" Name="Content Only" Kind="InputPin" />
             <Pin Id="RTZbu5RPrlmOyxk8ZlY4QR" Name="Capture Cursor" Kind="InputPin" DefaultValue="False" />
+            <Pin Id="Pbc9b84gSoILyaAQwP0mYf" Name="Crop Rectangle" Kind="InputPin" />
             <Pin Id="QVYY0e9Qox5LZ1Q21LxT5S" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="530,500,41,19" Id="Qhi1zHCMZ43PVb78HOnImI">
@@ -241,11 +241,11 @@
             <Pin Id="NFBPDidXAl4NFaIDQEdvWy" Name="Source" Kind="InputPin" />
             <Pin Id="GCYVmH9C775MzKhEc6n7ei" Name="Update Source Enum" Kind="InputPin" />
             <Pin Id="GRjd3erLtLZLWlbcUNtBe9" Name="Capture Cursor" Kind="InputPin" />
-            <Pin Id="I2Aw09GdWVHLbWl5mtozD6" Name="Display Recorder Api" Kind="InputPin" />
-            <Pin Id="NNCnIGiNQSsMQebuvBBCQN" Name="Window Content Only" Kind="InputPin" />
+            <Pin Id="I2Aw09GdWVHLbWl5mtozD6" Name="Display Recorder Api" Kind="InputPin" DefaultValue="DesktopDuplication" />
+            <Pin Id="IJAla9iJmzaMOWeSfahBpm" Name="Crop Rectangle" Kind="InputPin" />
             <Pin Id="QvRLW0gyc1TLKMaajzHTzg" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="SWjSN55cH7TP2K3iJfohCc" Comment="Source" Bounds="412,181,511,15" ShowValueBox="true" isIOBox="true" Value="Display: Main">
+          <Pad Id="SWjSN55cH7TP2K3iJfohCc" Comment="Source" Bounds="412,181,511,15" ShowValueBox="true" isIOBox="true" Value="Window: Stride">
             <p:TypeAnnotation LastCategoryFullName="VL.ScreenRecorder" LastSymbolSource="VL.ScreenRecorder.dll">
               <Choice Kind="TypeFlag" Name="RecorderSourcesEnum" />
             </p:TypeAnnotation>
@@ -287,6 +287,25 @@
               <Choice Kind="TypeFlag" Name="AudioOutputsEnum" />
             </p:TypeAnnotation>
           </Pad>
+          <Node Bounds="239,457,61,19" Id="QC9t5e0gJgnLRxXTpxADF1">
+            <p:NodeReference LastCategoryFullName="2D.Rectangle" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="Rectangle (Join)" />
+            </p:NodeReference>
+            <Pin Id="FmGVEWa7DG6OrAi9kvFFVP" Name="Position" Kind="InputPin" DefaultValue="0, 39" />
+            <Pin Id="BFdQoDQ47zmQa6D0aoqs94" Name="Size" Kind="InputPin" DefaultValue="249, 249" />
+            <Pin Id="IE2Fn5zILEZPPN3Jk10jSR" Name="Anchor" Kind="InputPin" />
+            <Pin Id="NHLUCk1hgOgOTsrExs6kAv" Name="Output" Kind="StateOutputPin" />
+          </Node>
+          <Node Bounds="239,486,46,26" Id="KAax6LJJdpDOBX55mHFdy3">
+            <p:NodeReference LastCategoryFullName="Primitive.Nullable" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="Nullable" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
+            </p:NodeReference>
+            <Pin Id="DphuBVkXRkePR4lQaf0OEj" Name="Value" Kind="InputPin" />
+            <Pin Id="A4WI12pQYV9L8AbqsOgayU" Name="Output" Kind="StateOutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="VvCI695NKM1Ol1CO4dUipD" Name="Create" />
         <Patch Id="F5709Xifkl8PHYAmydEH5u" Name="Update" />
@@ -311,14 +330,17 @@
         <Link Id="BqZKtQ31lPGObdMGHIG196" Ids="U8eyUfVy9vOLMzlRQQKsVR,Dr0rlPyshM4PA9udtHUL4Z" />
         <Link Id="Mur1SFRnTLUPxuKN1wT2P7" Ids="OHyTud6mfQhOntR7ZHcJGi,CvYQ7S7Jck2NgJa1kDorXz" />
         <Link Id="Ec6Y8YHmGH7PAMsAWS03H0" Ids="QsASkNIzCg7OH0R1Edj89n,ISJzQyAKYD8LRm05vEfP7T" />
-        <Link Id="P4qNq2sjbIIODrIFVBWwgN" Ids="QvRLW0gyc1TLKMaajzHTzg,ORdv9BrGmrqLdgfsxZHdLI" />
         <Link Id="GeipELDFdsHMuSr3QPR0k3" Ids="SWjSN55cH7TP2K3iJfohCc,NFBPDidXAl4NFaIDQEdvWy" />
         <Link Id="V42DOgEpkbvNwxhf5Awukh" Ids="VOk2PBHvDTIMQtYEThUzQD,GCYVmH9C775MzKhEc6n7ei" />
         <Link Id="PtJoXkFPAdjPHe0z4yDZQr" Ids="JEhymuEdCIyP0my8DHHWQp,SJut0pNUBLOMRanWAWvyla" />
         <Link Id="EGTLkVJO4u9PMbjg9qVXZ8" Ids="Gakym9UFZD1QIK8s5YmHMk,MgTEQ2UPYgkQWR8W42tgj8" />
+        <Link Id="I4PUbxPpuJdNXiFfvubiae" Ids="NHLUCk1hgOgOTsrExs6kAv,DphuBVkXRkePR4lQaf0OEj" />
+        <Link Id="A2MbBqWbKQ3N8HofTw0rpY" Ids="QvRLW0gyc1TLKMaajzHTzg,ORdv9BrGmrqLdgfsxZHdLI" />
+        <Link Id="FQlWr5R1NxwNSRa2hSG6nr" Ids="A4WI12pQYV9L8AbqsOgayU,Pbc9b84gSoILyaAQwP0mYf" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="TJh3reCulWwMycMuzllrsK" Location="VL.Skia" Version="2021.4.9" />
+  <NugetDependency Id="TJh3reCulWwMycMuzllrsK" Location="VL.Skia" Version="2021.4.10" />
   <NugetDependency Id="GgVBgDhgjjOPgvJiIdmxA5" Location="VL.ScreenRecorder" Version="0.0.0.0" />
+  <NugetDependency Id="IDl7uciYgQJMXCOH93kEGd" Location="VL.Stride" Version="2021.4.10" />
 </Document>

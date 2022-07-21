@@ -50,6 +50,14 @@ Set the size of the overlay with the given ID.
             <param name="size">The size of the overlay in pixels</param>
             <returns />
         </member>
+        <member name="M:ScreenRecorderLib.DynamicOptionsBuilder.SetCursorCaptureForOverlay(System.String,System.Boolean)">
+            <summary>
+Enable or disable mouse cursor capture for the recording overlay with the given ID.
+</summary>
+            <param name="recordingSourceID">ID for a recording source in progress</param>
+            <param name="isCursorCaptureEnabled" />
+            <returns />
+        </member>
         <member name="M:ScreenRecorderLib.DynamicOptionsBuilder.SetCursorCaptureForRecordingSource(System.String,System.Boolean)">
             <summary>
 Enable or disable mouse cursor capture for the recording source with the given ID.
@@ -322,6 +330,16 @@ Encode video with H264 encoder.
         <member name="F:ScreenRecorderLib.H264BitrateControlMode.CBR">
             <summary>Constant bitrate. Faster encoding than VBR, but produces larger files with consistent size. This setting might not work on software encoding. </summary>
         </member>
+        <member name="P:ScreenRecorderLib.WindowOverlay.IsCursorCaptureEnabled">
+            <summary>
+This option determines if the mouse cursor is recorded for this source. Defaults to true.
+</summary>
+        </member>
+        <member name="P:ScreenRecorderLib.DisplayOverlay.IsCursorCaptureEnabled">
+            <summary>
+This option determines if the mouse cursor is recorded for this source. Defaults to true.
+</summary>
+        </member>
         <member name="P:ScreenRecorderLib.RecordingOverlayBase.Offset">
             <summary>
 This option can be configured to position the overlay within the output frame.
@@ -583,6 +601,11 @@ An optional custom area of the source to record. Must be equal or smaller than t
         <member name="F:RECORDING_OVERLAY.Offset">
             <summary>
 Optional custom offset for the source frame.
+</summary>
+        </member>
+        <member name="F:RECORDING_SOURCE_BASE.IsCursorCaptureEnabled">
+            <summary>
+Determines if the source is capturing mouse cursors. If false, it will be hidden.
 </summary>
         </member>
         <member name="F:RECORDING_SOURCE_BASE.IsVideoCaptureEnabled">
