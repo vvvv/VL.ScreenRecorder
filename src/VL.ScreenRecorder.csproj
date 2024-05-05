@@ -1,14 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <OutputPath>..\lib</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2021.4.9" />
+    <PackageReference Include="VL.Core" Version="2024.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Using Include="VL.Core" />
+  </ItemGroup>
+  
   <ItemGroup>
     <Reference Include="ScreenRecorderLib">
       <HintPath>..\lib\ScreenRecorderLib.dll</HintPath>
