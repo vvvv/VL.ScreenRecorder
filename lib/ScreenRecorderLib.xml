@@ -380,6 +380,12 @@ The file path to the video
 The device name to record
 </summary>
         </member>
+        <member name="P:ScreenRecorderLib.DisplayRecordingSource.IsBorderRequired">
+            <summary>
+Gets or sets a value specifying whether a Windows Graphics Capture operation requires a colored border around the window or display to indicate that a capture is in progress.
+Requires Windows 11.
+</summary>
+        </member>
         <member name="P:ScreenRecorderLib.DisplayRecordingSource.IsCursorCaptureEnabled">
             <summary>
 This option determines if the mouse cursor is recorded for this source. Defaults to true.
@@ -388,6 +394,12 @@ This option determines if the mouse cursor is recorded for this source. Defaults
         <member name="P:ScreenRecorderLib.DisplayRecordingSource.DeviceName">
             <summary>
 The device name to record, e.g. \\\\.\\DISPLAY1
+</summary>
+        </member>
+        <member name="P:ScreenRecorderLib.WindowRecordingSource.IsBorderRequired">
+            <summary>
+Gets or sets a value specifying whether a Windows Graphics Capture operation requires a colored border around the window or display to indicate that a capture is in progress.
+Requires Windows 11.
 </summary>
         </member>
         <member name="P:ScreenRecorderLib.WindowRecordingSource.IsCursorCaptureEnabled">
@@ -470,11 +482,38 @@ Perform cropping and resizing on texture if needed.
             <param name="videoOutputFrameSize">The output dimensions. The texture will be resized to these coordinates if differing.</param>
             <returns>S_OK if any processing has been done, S_FALSE if no changes, else an error code</returns>
         </member>
-        <member name="M:RecordingManager.SaveTextureAsVideoSnapshot(ID3D11Texture2D*,tagRECT)">
+        <member name="M:RecordingManager.ProcessTexture(ID3D11Texture2D*,ID3D11Texture2D**,std.optional&lt;PTR_INFO&gt;)">
             <summary>
-Save texture as image to video snapshot folder.
+Adds overlays, mouse cursors, and texture transforms.
+</summary>
+            <param name="pTexture">The texture to process</param>
+            <param name="pPtrInfo">Mouse pointer info (optional).</param>
+            <param name="ppProcessedTexture">The output texture.</param>
+            <returns>S_OK if any processing has been done, S_FALSE if no changes, else an error code</returns>
+        </member>
+        <member name="M:RecordingManager.SaveTextureAsVideoSnapshotAsync(ID3D11Texture2D*,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,tagRECT,std.function&lt;(System.Int32!System.Runtime.CompilerServices.IsLong)(System.Int32!System.Runtime.CompilerServices.IsLong)&gt;)">
+            <summary>
+Save texture as snapshot image async.
 </summary>
             <param name="pTexture">The texture to save to a snapshot</param>
+            <param name="sourceRect">The area of the texture to save. If the texture is larger, it will be cropped to these coordinates.</param>
+            <returns />
+        </member>
+        <member name="M:RecordingManager.SaveTextureAsVideoSnapshot(ID3D11Texture2D*,IStream*,tagRECT)">
+            <summary>
+Save texture as snapshot image.
+</summary>
+            <param name="pTexture">The texture to save to a snapshot</param>
+            <param name="pStream">A stream to save the snapshot to</param>
+            <param name="sourceRect">The area of the texture to save. If the texture is larger, it will be cropped to these coordinates.</param>
+            <returns />
+        </member>
+        <member name="M:RecordingManager.SaveTextureAsVideoSnapshot(ID3D11Texture2D*,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,tagRECT)">
+            <summary>
+Save texture as snapshot image.
+</summary>
+            <param name="pTexture">The texture to save to a snapshot</param>
+            <param name="snapshotPath">A file path to save the snapshot to</param>
             <param name="sourceRect">The area of the texture to save. If the texture is larger, it will be cropped to these coordinates.</param>
             <returns />
         </member>
@@ -496,6 +535,35 @@ Calculate the offset used to position the content withing the parent frame based
             <param name="contentRect" />
             <returns />
         </member>
+        <member name="M:WWMFResampler.Finalize">
+Finalize must be called even when Initialize() is failed
+</member>
+        <member name="M:WWMFResampler.Drain(System.UInt32!System.Runtime.CompilerServices.IsLong,WWMFSampleData*)">
+@param resampleInputBytes input buffer bytes of Resample(). this arg is used to calculate expected output buffer size
+@param sampleData_return [out] set fresh (its data shold not be allocated yet) WWMFSampleData instance as this arg
+</member>
+        <member name="M:WWMFResampler.Resample(System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsLong,WWMFSampleData*)">
+@bytes buffer bytes. must be smaller than approx. 512KB to convert 44100Hz to 192000Hz
+</member>
+        <member name="M:WWMFResampler.Initialize(WWMFPcmFormat!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,WWMFPcmFormat!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32)">
+@param halfFilterLength conversion quality. 1(min) to 60 (max)
+</member>
+        <member name="M:WWMFSampleData.MoveAdd(WWMFSampleData*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+If this instance is not empty, rhs content is concatenated to this instance. rhs remains untouched.
+If this instance is empty, rhs content moves to this instance. rhs becomes empty.
+rhs.Release() must be called to release memory either way!
+
+</member>
+        <member name="M:WWMFSampleData.#ctor(System.Byte*,System.Int32)">
+@param aData must point new[] ed memory address
+</member>
+        <member name="T:WWMFSampleData">
+WWMFSampleData contains new[] ed byte buffer pointer(data) and buffer size(bytes).
+</member>
+        <member name="T:WWMFBitFormatType">
+sample data type. int or float
+it is compatible to WWBitFormatType on WasapiUser.h
+</member>
         <member name="M:TextureManager.CopyTextureWithCPU(ID3D11Device*,ID3D11Texture2D*,ID3D11Texture2D**)">
             <summary>
 Copy a texture via the CPU. This can be used to copy a texture created on one physical device to be rendered on another.
@@ -554,35 +622,6 @@ Returns the main display output of the system.
 </summary>
             <param name="ppOutput">The IDXGIOutput corresponding to the main output</param>
         </member>
-        <member name="M:WWMFResampler.Finalize">
-Finalize must be called even when Initialize() is failed
-</member>
-        <member name="M:WWMFResampler.Drain(System.UInt32!System.Runtime.CompilerServices.IsLong,WWMFSampleData*)">
-@param resampleInputBytes input buffer bytes of Resample(). this arg is used to calculate expected output buffer size
-@param sampleData_return [out] set fresh (its data shold not be allocated yet) WWMFSampleData instance as this arg
-</member>
-        <member name="M:WWMFResampler.Resample(System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsLong,WWMFSampleData*)">
-@bytes buffer bytes. must be smaller than approx. 512KB to convert 44100Hz to 192000Hz
-</member>
-        <member name="M:WWMFResampler.Initialize(WWMFPcmFormat!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,WWMFPcmFormat!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32)">
-@param halfFilterLength conversion quality. 1(min) to 60 (max)
-</member>
-        <member name="M:WWMFSampleData.MoveAdd(WWMFSampleData*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
-If this instance is not empty, rhs content is concatenated to this instance. rhs remains untouched.
-If this instance is empty, rhs content moves to this instance. rhs becomes empty.
-rhs.Release() must be called to release memory either way!
-
-</member>
-        <member name="M:WWMFSampleData.#ctor(System.Byte*,System.Int32)">
-@param aData must point new[] ed memory address
-</member>
-        <member name="T:WWMFSampleData">
-WWMFSampleData contains new[] ed byte buffer pointer(data) and buffer size(bytes).
-</member>
-        <member name="T:WWMFBitFormatType">
-sample data type. int or float
-it is compatible to WWBitFormatType on WasapiUser.h
-</member>
         <member name="F:RECORDING_SOURCE_DATA.FrameCoordinates">
             <summary>
 Describes the position and size of this recording source within the recording surface.
@@ -603,6 +642,11 @@ An optional custom area of the source to record. Must be equal or smaller than t
 Optional custom offset for the source frame.
 </summary>
         </member>
+        <member name="F:RECORDING_SOURCE_BASE.IsBorderRequired">
+            <summary>
+Toggles the display of a yellow border around recorded displays and windows when using Windows Graphics Capture on Windows 10 2104 or newer. If false, it will be hidden.
+</summary>
+        </member>
         <member name="F:RECORDING_SOURCE_BASE.IsCursorCaptureEnabled">
             <summary>
 Determines if the source is capturing mouse cursors. If false, it will be hidden.
@@ -621,6 +665,11 @@ The anchor position for the content inside the parent frame.
         <member name="F:RECORDING_SOURCE_BASE.OutputSize">
             <summary>
 Optional custom output size of the source frame. May be both smaller or larger than the source.
+</summary>
+        </member>
+        <member name="F:RECORDING_SOURCE_BASE.CaptureFormatIndex">
+            <summary>
+The index for a MediaType describing a capture format. This is used to select e.g resolution from cameras.
 </summary>
         </member>
         <member name="F:RECORDING_SOURCE_BASE.Stretch">
@@ -653,13 +702,11 @@ Stretch mode for the frame
             <summary>
 Forces the dimensions of n to be even by adding 1*modifier pixel if odd.
 </summary>
-            <param name="rect" />
         </member>
         <member name="M:MakeRectEven(tagRECT*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32)">
             <summary>
 Forces the dimensions of rect to be even by adding 1*modifier pixel if odd.
 </summary>
-            <param name="rect" />
         </member>
     </members>
 </doc>

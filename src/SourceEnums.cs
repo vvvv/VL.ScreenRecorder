@@ -99,12 +99,19 @@ namespace VL.ScreenRecorder
     public class RecorderSourcesEnumDefinition : DynamicEnumDefinitionBase<RecorderSourcesEnumDefinition>
     {
         Subject<object> UpdateEnum = new Subject<object>();
+        Dictionary<string, object> sources = new Dictionary<string, object>();
 
         //return the current enum entries
         protected override IReadOnlyDictionary<string, object> GetEntries()
         {
-            var sources = new Dictionary<string, object>();
-            
+            //deferred retrieval of windows to Update method, as vvvv would completely freeze, when calling Recorder.GetWindows() here.
+            return sources;
+        }
+
+        public void Update()
+        {
+            sources.Clear();
+
             sources["Display: Main"] = DisplayRecordingSource.MainMonitor;
 
             foreach (var d in Recorder.GetDisplays().OrderBy(w => w.FriendlyName))
@@ -118,12 +125,7 @@ namespace VL.ScreenRecorder
 
             foreach (var d in Recorder.GetSystemVideoCaptureDevices())
                 sources["Devíce: " + d.FriendlyName] = d;
-            
-            return sources;
-        }
 
-        public void Update()
-        {
             UpdateEnum.OnNext(null);
         }
 
