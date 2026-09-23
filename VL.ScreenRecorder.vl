@@ -675,18 +675,18 @@
             <Link Id="RMjZnN4q3joO03S1zx8Ue4" Ids="OVe79SyVYUZNdeJx5cwsFg,A5oArAXWEkEOiOkO72m1DE" />
             <Link Id="VqLJhFbLWBzQHkNRRpK0WY" Ids="SkL4QqNysneOgRcYBOZNBZ,OgCwlrBhYtWMcNAgH17NZG" />
             <Patch Id="KdD8Fi1zpUQL6WsCsrhW1i" Name="Create" />
-            <Patch Id="FAJw0lBIQ08OhBRZpJxyt7" Name="Update">
+            <Patch Id="FAJw0lBIQ08OhBRZpJxyt7" Name="Update" ManuallySortedPins="true">
               <Pin Id="JTA69DL9oxpQIYNZ0PukWQ" Name="Framerate" Kind="InputPin" Bounds="643,308" DefaultValue="30" />
-              <Pin Id="HTt0wrLeNXfPQxvc4n9CfH" Name="Is Fixed Framerate" Kind="InputPin" Bounds="723,298" DefaultValue="True" />
-              <Pin Id="EliGvsrCLmFM3uF9yBOKqc" Name="Bitrate" Kind="InputPin" />
-              <Pin Id="O2rR0AgnnzOLt1wZQff3gU" Name="Encoder" Kind="InputPin" Bounds="845,297" />
-              <Pin Id="BlyHqJLh5LvMPKdMQx6Gun" Name="Fragmented Mp4" Kind="InputPin" Bounds="485,271" DefaultValue="True" Summary="Fragmented Mp4 allows playback to start at arbitrary positions inside a video stream, instead of requiring to read the headers at the start of the stream." />
-              <Pin Id="UYbTEVZUrgEO2Bs7qbkZ6A" Name="Throttling Disabled" Kind="InputPin" Bounds="814,270" Summary="If throttling is disabled, out of memory exceptions may eventually crash the program, depending on encoder settings and system specifications." />
-              <Pin Id="PrWOsw5irEoP9mrH8zYuee" Name="Hardware Encoding" Kind="InputPin" Bounds="607,291" DefaultValue="True" />
-              <Pin Id="EYiqepozpFrNBY9I0NHrzI" Name="Low Latency" Kind="InputPin" Bounds="908,302" Summary="Low latency mode provides faster encoding, but can reduce quality." />
-              <Pin Id="JnhxZdNlONcO0ooZE60wTw" Name="Mp4 Fast Start" Kind="InputPin" Bounds="810,318" Summary="Fast start writes the mp4 header at the beginning of the file, to facilitate streaming" />
-              <Pin Id="O4X2UqgbkLqPuNRrs3BXr1" Name="Quality" Kind="InputPin" Bounds="651,254" />
+              <Pin Id="O4X2UqgbkLqPuNRrs3BXr1" Name="Quality" Kind="InputPin" Bounds="651,254" DefaultValue="70" />
               <Pin Id="OzQg345CCYzNTR2QvGqfyM" Name="Output" Kind="OutputPin" Bounds="404,752" />
+              <Pin Id="EliGvsrCLmFM3uF9yBOKqc" Name="Bitrate" Kind="InputPin" DefaultValue="4000000" />
+              <Pin Id="HTt0wrLeNXfPQxvc4n9CfH" Name="Is Fixed Framerate" Kind="InputPin" Bounds="723,298" DefaultValue="False" />
+              <Pin Id="UYbTEVZUrgEO2Bs7qbkZ6A" Name="Throttling Disabled" Kind="InputPin" Bounds="814,270" Summary="If throttling is disabled, out of memory exceptions may eventually crash the program, depending on encoder settings and system specifications." />
+              <Pin Id="EYiqepozpFrNBY9I0NHrzI" Name="Low Latency" Kind="InputPin" Bounds="908,302" Summary="Low latency mode provides faster encoding, but can reduce quality." />
+              <Pin Id="JnhxZdNlONcO0ooZE60wTw" Name="Mp4 Fast Start" Kind="InputPin" Bounds="810,318" DefaultValue="True" Summary="Fast start writes the mp4 header at the beginning of the file, to facilitate streaming" />
+              <Pin Id="BlyHqJLh5LvMPKdMQx6Gun" Name="Fragmented Mp4" Kind="InputPin" Bounds="485,271" DefaultValue="False" Summary="Fragmented Mp4 allows playback to start at arbitrary positions inside a video stream, instead of requiring to read the headers at the start of the stream." />
+              <Pin Id="PrWOsw5irEoP9mrH8zYuee" Name="Hardware Encoding" Kind="InputPin" Bounds="607,291" DefaultValue="True" />
+              <Pin Id="O2rR0AgnnzOLt1wZQff3gU" Name="Encoder" Kind="InputPin" Bounds="845,297" />
             </Patch>
           </Patch>
         </Node>
@@ -1937,9 +1937,9 @@
                 <Pin Id="Lh8DZkLe9V4LulkREcoP3s" Name="Force" Kind="InputPin" DefaultValue="False" />
                 <Pin Id="MO1DqSnVUWgNkzIA0pqThV" Name="Dispose Cached Outputs" Kind="InputPin" />
                 <Pin Id="RTslcrhInbtM7rVbZFwlkg" Name="Has Changed" Kind="OutputPin" />
-                <ControlPoint Id="PaJXMbUCRLRLQepZECcwvu" Bounds="265,578" Alignment="Bottom" />
-                <ControlPoint Id="EoaKmRvnz7VP6X4NG3gO13" Bounds="556,362" Alignment="Top" />
-                <ControlPoint Id="BH85XOXQeaTOGYU6nuVZH6" Bounds="422,362" Alignment="Top" />
+                <ControlPoint Id="PaJXMbUCRLRLQepZECcwvu" Bounds="265,828" Alignment="Bottom" />
+                <ControlPoint Id="EoaKmRvnz7VP6X4NG3gO13" Bounds="556,361" Alignment="Top" />
+                <ControlPoint Id="BH85XOXQeaTOGYU6nuVZH6" Bounds="422,361" Alignment="Top" />
                 <Patch Id="A3h4ahjaCnLPgjHzYrjDE6" ManuallySortedPins="true">
                   <Patch Id="PF1XnpC7dvNNSh7LzFa0lc" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="NSUOiOkSn6sNI8wRWQsAz7" Name="Then" ManuallySortedPins="true" />
@@ -2001,13 +2001,13 @@
                     <Pin Id="AS2z4zDuCOAL05WGTU7dv5" Name="Output" Kind="StateOutputPin" />
                     <Pin Id="QgbikVOwc6FPmHBMMO9Gwo" Name="Has Value" Kind="OutputPin" />
                   </Node>
-                  <Node Bounds="408,512,136,236" Id="V79iqzZGnRMMiARxrZPgBV">
+                  <Node Bounds="408,512,136,237" Id="V79iqzZGnRMMiARxrZPgBV">
                     <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                       <Choice Kind="ApplicationStatefulRegion" Name="If" />
                       <FullNameCategoryReference ID="Primitive" />
                     </p:NodeReference>
                     <Pin Id="JhNRpxbz5XULAwID2fNMnz" Name="Condition" Kind="InputPin" />
-                    <ControlPoint Id="Md13S4VpXs8NbRONvqvjgU" Bounds="423,519" Alignment="Top" />
+                    <ControlPoint Id="Md13S4VpXs8NbRONvqvjgU" Bounds="423,518" Alignment="Top" />
                     <ControlPoint Id="BO5wswqP4BFNYSc1kzFSbR" Bounds="424,743" Alignment="Bottom" />
                     <Patch Id="AGCC7cvz8kLPbXQJDlcn7W" ManuallySortedPins="true">
                       <Patch Id="A4OqMPlGl3oMAMNLwUvhxu" Name="Create" ManuallySortedPins="true" />
@@ -2061,7 +2061,7 @@
                     </Patch>
                   </Node>
                 </Patch>
-                <ControlPoint Id="Nvo9vMaJjCgLuNlGXlpmtQ" Bounds="659,362" Alignment="Top" />
+                <ControlPoint Id="Nvo9vMaJjCgLuNlGXlpmtQ" Bounds="659,361" Alignment="Top" />
               </Node>
               <ControlPoint Id="E5jr1ihB5LqNb2EMXgoGnO" Bounds="556,323" />
               <Node Bounds="371,254,72,82" Id="OihzFvf0q7pOYP2C23sPX6">
@@ -2216,8 +2216,8 @@
             </Canvas>
             <Patch Id="HaHR1FUtTpTPUmo05Aval0" Name="Create" />
             <Patch Id="PeeHmbYyzYZL6imuDRf3Om" Name="Update">
-              <Pin Id="COzdfiMRZLHPEzSeKNXfvy" Name="Bitrate Mode" Kind="InputPin" />
-              <Pin Id="CjgTWu1C8LpLNfyuldFPzt" Name="Profile" Kind="InputPin" DefaultValue="Main" />
+              <Pin Id="COzdfiMRZLHPEzSeKNXfvy" Name="Bitrate Mode" Kind="InputPin" DefaultValue="Quality" />
+              <Pin Id="CjgTWu1C8LpLNfyuldFPzt" Name="Profile" Kind="InputPin" DefaultValue="High" />
               <Pin Id="BG79HYcQslhPjOlyAewVEo" Name="Output" Kind="OutputPin" Bounds="550,602" />
             </Patch>
             <ProcessDefinition Id="UaKWqERf4RyMFcB8XGluVl">
@@ -2794,7 +2794,7 @@
               </Pin>
               <Pin Id="S1DFNfftZvVL5ZK5yBXeNK" Name="Update Source Enum" Kind="InputPin" Bounds="469,69" DefaultValue="False" />
               <Pin Id="JckvCakbnzpQQnSVmezFQH" Name="Capture Cursor" Kind="InputPin" Bounds="751,106" DefaultValue="False" />
-              <Pin Id="TeiMyKI8tfzOBperkONcWh" Name="Display Recorder Api" Kind="InputPin" Bounds="552,211" />
+              <Pin Id="TeiMyKI8tfzOBperkONcWh" Name="Display Recorder Api" Kind="InputPin" Bounds="552,211" DefaultValue="WindowsGraphicsCapture" />
               <Pin Id="NqTWuLKDUaAQUytekisETK" Name="Crop Rectangle" Kind="InputPin" Bounds="917,266">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Nullable" />
