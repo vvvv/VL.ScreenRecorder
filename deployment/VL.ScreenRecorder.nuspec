@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.ScreenRecorder</id>
-    <version>0.2.0-alpha</version>
+    <version>0.3.0-alpha</version>
     <title>VL.ScreenRecorder</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>

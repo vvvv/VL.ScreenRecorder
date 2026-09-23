@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="J9yO66TvmLJQO8lumx5F55" LanguageVersion="2024.6.3" Version="0.128">
-  <NugetDependency Id="UFnW8Z4qKIgQDCMyHYV5oj" Location="VL.CoreLib" Version="2024.6.3" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="J9yO66TvmLJQO8lumx5F55" LanguageVersion="2025.7.4" Version="0.128">
+  <NugetDependency Id="UFnW8Z4qKIgQDCMyHYV5oj" Location="VL.CoreLib" Version="2025.7.4" />
   <Patch Id="VdIoMQTpnkTOEDhYaNLXg4">
     <Canvas Id="TyuTHLwYfn3LiJY04j9rJv" DefaultCategory="System" CanvasType="FullCategory">
       <!--
@@ -306,6 +306,7 @@
               <Pin Id="NxIR4An7JZFNq6jRGqcrgi" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="Kozwc19UjhtMEuz8sy7fIK" Name="Messages" Kind="InputPin" />
               <Pin Id="B0JYdwq5u3nOjPhWGICWIA" Name="Reset" Kind="InputPin" />
+              <Pin Id="BBxtJiq6wZuN4NSMJzwh2l" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="CJTgFtQy0F3L8ADl9BNxcQ" Name="Result" Kind="OutputPin" />
               <Patch Id="Rb8Jv1uhSCOM6cCAqLXhT1" ManuallySortedPins="true">
                 <Patch Id="VcKMLQmt2sSPZeR1rTBIAU" Name="Create" ManuallySortedPins="true" />
@@ -345,6 +346,7 @@
               <Pin Id="QrW0hJiLGywQGNgrEzn72r" Name="Initial Result" Kind="InputPin" IsHidden="true" />
               <Pin Id="Dk5oR3c8B5xMjyQwBtfc5V" Name="Async Notifications" Kind="InputPin" />
               <Pin Id="KGQdvtdgP8MNbOZUBq2KZJ" Name="Reset" Kind="InputPin" />
+              <Pin Id="BAX4IRSJ7XTM7w83AueFMu" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="RgvDCpu4nwSQBcm10wRC8p" Name="Value" Kind="OutputPin" />
               <Pin Id="TGOaIPByVJhMUh42786waL" Name="On Data" Kind="OutputPin" />
             </Node>
@@ -2689,6 +2691,7 @@
                 <Pin Id="CtH9U6FCuhNPbQIidGk71m" Name="Initial Result" Kind="InputPin" IsHidden="true" />
                 <Pin Id="It6yHMdzzxiLujY5OrVQLs" Name="Async Notifications" Kind="InputPin" />
                 <Pin Id="EVOi8XjflqyQOTCLxKyEMM" Name="Reset" Kind="InputPin" />
+                <Pin Id="P3tCor08hPnMmqoBsgAN3c" Name="Output" Kind="OutputPin" IsHidden="true" />
                 <Pin Id="QLaGDv9lRGOOUfWWHmLKUa" Name="Value" Kind="OutputPin" />
                 <Pin Id="OMOuPjpIcZhMbiFJnvwM45" Name="On Data" Kind="OutputPin" />
               </Node>
@@ -2995,8 +2998,8 @@
       </Patch>
     </Node>
   </Patch>
-  <PlatformDependency Id="Ac2fA2xnYJjNsFkmzGuPzz" Location="./lib/ScreenRecorderLib.dll" />
   <PlatformDependency Id="SDEl4rMXQDpPigfzXsY7HM" Location="System.Windows.Forms" />
   <PlatformDependency Id="UdopGm3c14MPhDEexaGBnF" Location="System.Drawing" />
   <PlatformDependency Id="T54b1aSajMJOXoyWg6wjlS" Location="./lib/netstandard2.0/VL.ScreenRecorder.dll" />
+  <PlatformDependency Id="AnGv4zSSoYqOrYT1kEn9lp" Location="./lib/net8.0/ScreenRecorderLib.dll" />
 </Document>
