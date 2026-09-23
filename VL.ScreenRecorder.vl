@@ -3000,6 +3000,6 @@
   </Patch>
   <PlatformDependency Id="SDEl4rMXQDpPigfzXsY7HM" Location="System.Windows.Forms" />
   <PlatformDependency Id="UdopGm3c14MPhDEexaGBnF" Location="System.Drawing" />
-  <PlatformDependency Id="T54b1aSajMJOXoyWg6wjlS" Location="./lib/netstandard2.0/VL.ScreenRecorder.dll" />
-  <PlatformDependency Id="AnGv4zSSoYqOrYT1kEn9lp" Location="./lib/net8.0/ScreenRecorderLib.dll" />
+  <PlatformDependency Id="T54b1aSajMJOXoyWg6wjlS" Location="VL.ScreenRecorder.dll" />
+  <PlatformDependency Id="AnGv4zSSoYqOrYT1kEn9lp" Location="ScreenRecorderLib.dll" />
 </Document>
