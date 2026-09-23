@@ -6,10 +6,12 @@
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <OutputPath>..\lib</OutputPath>
+    <UserSecretsId>4397d674-0b97-4161-ba0a-e790f6f62a0e</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="VL.Core" Version="2024.6.3" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
+    <PackageReference Include="VL.Core" Version="2025.7.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,7 +20,7 @@
   
   <ItemGroup>
     <Reference Include="ScreenRecorderLib">
-      <HintPath>..\lib\ScreenRecorderLib.dll</HintPath>
+      <HintPath>..\runtimes\win-x64\lib\net8.0\ScreenRecorderLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 

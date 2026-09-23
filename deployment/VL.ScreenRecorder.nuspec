@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.ScreenRecorder</id>
-    <version>0.3.1-alpha</version>
+    <version>0.3.2-alpha</version>
     <title>VL.ScreenRecorder</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
@@ -15,7 +15,7 @@
   </metadata>
   <files>
     <file src="..\*.vl" target="" exclude="" />
-	<file src="..\lib\**\*.dll" target="lib\" exclude="" />
+	<file src="..\lib\net8.0\VL.ScreenRecorder.dll" target="lib\" exclude="" />
 	<file src="..\runtimes\**\*.dll" target="runtimes\" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
 	<file src="nugeticon.png" target="icon\" />
